@@ -8,11 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var barCodeView: UIImageView!
+    @IBOutlet weak var employeeNameLable: UILabel!
+    
+    var employeeName = "Steve"
+    
+    var barCode = UIImage(named: "ClockInBarcode.png")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        employeeNameLable.text = employeeName.uppercaseString
+        barCodeView.image = barCode
+        
     }
 
     override func didReceiveMemoryWarning() {
