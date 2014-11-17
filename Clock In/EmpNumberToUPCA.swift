@@ -11,7 +11,7 @@ class EmpNumToUPCA {
     func convertEmpNum(input: String) -> String {
         var upca: [Int] = self.stringToUPCA(input)
         var cDigit:Int = self.checkDigit(upca)
-        upca.insert(cDigit, atIndex: 11)
+        upca.insert(cDigit, atIndex: 12)
         var upcaString = ""
         for number in upca {
             upcaString += "\(number)"
@@ -21,10 +21,10 @@ class EmpNumToUPCA {
     }
     
     private func stringToUPCA (input: String) -> [Int] {
-        var i = 11 - input.length()
+        var i = 12 - input.length()
         var j = 0
         var char:Character
-        var stringArray = [String](count: 11, repeatedValue: "0")
+        var stringArray = [String](count: 12, repeatedValue: "0")
         var intArray = [Int](count: stringArray.count, repeatedValue: 0)
         // Converts input into [stringArray]
         for elementString in input {

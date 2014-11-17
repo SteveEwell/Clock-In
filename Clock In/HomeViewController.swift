@@ -13,13 +13,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var barCodeView: UIImageView!
     @IBOutlet weak var employeeNameLable: UILabel!
     
-    var employeeName = "Steve"
+    let generator:CoreGenerator = CoreGenerator()
     
-    var barCode = UIImage(named: "ClockInBarcode.png")
+    var employeeName = "Steve"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        var barCode:UIImage? = generator.generateCode("0000004781127")
         employeeNameLable.text = employeeName.uppercaseString
         barCodeView.image = barCode
         

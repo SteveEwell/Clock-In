@@ -17,6 +17,8 @@
 		AA228A1C1A05009300517DA1 /* Clock_InTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA228A1B1A05009300517DA1 /* Clock_InTests.swift */; };
 		AA228A281A05015200517DA1 /* ClockInBarcode.png in Resources */ = {isa = PBXBuildFile; fileRef = AA228A261A05015200517DA1 /* ClockInBarcode.png */; };
 		AA228A291A05015200517DA1 /* ClockInBarcode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA228A271A05015200517DA1 /* ClockInBarcode@2x.png */; };
+		AADBA6A81A1A43FF00A7FCE1 /* CoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */; };
+		AADBA6AA1A1A517C00A7FCE1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBA6A91A1A517C00A7FCE1 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		AA228A1B1A05009300517DA1 /* Clock_InTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_InTests.swift; sourceTree = "<group>"; };
 		AA228A261A05015200517DA1 /* ClockInBarcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClockInBarcode.png; sourceTree = "<group>"; };
 		AA228A271A05015200517DA1 /* ClockInBarcode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClockInBarcode@2x.png"; sourceTree = "<group>"; };
+		AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreGenerator.swift; path = "Clock In/CoreGenerator.swift"; sourceTree = SOURCE_ROOT; };
+		AADBA6A91A1A517C00A7FCE1 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				AA1BC2251A1A11FB00571F5D /* EmpNumberToUPCA.swift */,
+				AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */,
+				AADBA6A91A1A517C00A7FCE1 /* UIColorExtension.swift */,
 				AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */,
 			);
 			path = "Bar Code Classes";
@@ -246,6 +252,8 @@
 				AA1BC2261A1A11FC00571F5D /* EmpNumberToUPCA.swift in Sources */,
 				AA228A081A05009300517DA1 /* HomeViewController.swift in Sources */,
 				AA228A061A05009300517DA1 /* AppDelegate.swift in Sources */,
+				AADBA6A81A1A43FF00A7FCE1 /* CoreGenerator.swift in Sources */,
+				AADBA6AA1A1A517C00A7FCE1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
