@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1BC2241A1A10DD00571F5D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */; };
+		AA1BC2261A1A11FC00571F5D /* EmpNumberToUPCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BC2251A1A11FB00571F5D /* EmpNumberToUPCA.swift */; };
 		AA228A061A05009300517DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA228A051A05009300517DA1 /* AppDelegate.swift */; };
 		AA228A081A05009300517DA1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA228A071A05009300517DA1 /* HomeViewController.swift */; };
 		AA228A0B1A05009300517DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA228A091A05009300517DA1 /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		AA228A1C1A05009300517DA1 /* Clock_InTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA228A1B1A05009300517DA1 /* Clock_InTests.swift */; };
 		AA228A281A05015200517DA1 /* ClockInBarcode.png in Resources */ = {isa = PBXBuildFile; fileRef = AA228A261A05015200517DA1 /* ClockInBarcode.png */; };
 		AA228A291A05015200517DA1 /* ClockInBarcode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA228A271A05015200517DA1 /* ClockInBarcode@2x.png */; };
-		AA507FF71A0A64D8003B024A /* ConvertNumberToUPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA507FF61A0A64D8003B024A /* ConvertNumberToUPC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = "Clock In/StringExtensions.swift"; sourceTree = SOURCE_ROOT; };
+		AA1BC2251A1A11FB00571F5D /* EmpNumberToUPCA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmpNumberToUPCA.swift; path = "Clock In/EmpNumberToUPCA.swift"; sourceTree = SOURCE_ROOT; };
 		AA228A001A05009300517DA1 /* Clock In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA228A041A05009300517DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA228A051A05009300517DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +44,6 @@
 		AA228A1B1A05009300517DA1 /* Clock_InTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_InTests.swift; sourceTree = "<group>"; };
 		AA228A261A05015200517DA1 /* ClockInBarcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClockInBarcode.png; sourceTree = "<group>"; };
 		AA228A271A05015200517DA1 /* ClockInBarcode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClockInBarcode@2x.png"; sourceTree = "<group>"; };
-		AA507FF61A0A64D8003B024A /* ConvertNumberToUPC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConvertNumberToUPC.swift; path = "Clock In/ConvertNumberToUPC.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +134,8 @@
 		AA228A2A1A05019000517DA1 /* Bar Code Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AA507FF61A0A64D8003B024A /* ConvertNumberToUPC.swift */,
+				AA1BC2251A1A11FB00571F5D /* EmpNumberToUPCA.swift */,
+				AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */,
 			);
 			path = "Bar Code Classes";
 			sourceTree = "<group>";
@@ -239,7 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA507FF71A0A64D8003B024A /* ConvertNumberToUPC.swift in Sources */,
+				AA1BC2241A1A10DD00571F5D /* StringExtensions.swift in Sources */,
+				AA1BC2261A1A11FC00571F5D /* EmpNumberToUPCA.swift in Sources */,
 				AA228A081A05009300517DA1 /* HomeViewController.swift in Sources */,
 				AA228A061A05009300517DA1 /* AppDelegate.swift in Sources */,
 			);

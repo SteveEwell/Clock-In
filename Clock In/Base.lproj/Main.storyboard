@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eob-7X-la1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eob-7X-la1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJK-7E-g7Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJK-7E-g7Y">
                                 <rect key="frame" x="285" y="207" width="46" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="dZC-oK-yGg"/>
@@ -38,9 +38,6 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yF1-rT-lFj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -61,12 +58,12 @@
                                 <exclude reference="yF1-rT-lFj"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="6xo-mc-xGk"/>
+                                <exclude reference="Jdl-RM-Q4Y"/>
                                 <exclude reference="3gw-WI-TKl"/>
                                 <exclude reference="esK-2Q-JCU"/>
                                 <exclude reference="hRX-s9-PYQ"/>
                                 <exclude reference="wIE-1f-ukg"/>
-                                <exclude reference="6xo-mc-xGk"/>
-                                <exclude reference="Jdl-RM-Q4Y"/>
                                 <exclude reference="vCT-US-7Gs"/>
                             </mask>
                         </variation>
@@ -75,14 +72,14 @@
                                 <include reference="yF1-rT-lFj"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="6xo-mc-xGk"/>
+                                <include reference="Jdl-RM-Q4Y"/>
                                 <include reference="3gw-WI-TKl"/>
                                 <exclude reference="Eca-Q7-W7w"/>
                                 <exclude reference="adw-Mt-o12"/>
                                 <include reference="esK-2Q-JCU"/>
                                 <include reference="hRX-s9-PYQ"/>
                                 <include reference="wIE-1f-ukg"/>
-                                <include reference="6xo-mc-xGk"/>
-                                <include reference="Jdl-RM-Q4Y"/>
                                 <exclude reference="5mG-Sh-QSi"/>
                                 <include reference="vCT-US-7Gs"/>
                             </mask>
@@ -120,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="-396" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="xpy-sJ-JaQ">
             <objects>
                 <viewController id="SDh-7i-ZQf" sceneMemberID="viewController">
@@ -131,8 +128,42 @@
                     <view key="view" contentMode="scaleToFill" id="fFm-dl-fwu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13c-Cj-zuE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Save" id="L0F-vr-pCH"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="13c-Cj-zuE" secondAttribute="trailing" id="E9U-2F-Qep"/>
+                            <constraint firstItem="13c-Cj-zuE" firstAttribute="leading" secondItem="fFm-dl-fwu" secondAttribute="leading" id="Q3x-qJ-Q15"/>
+                            <constraint firstItem="13c-Cj-zuE" firstAttribute="bottom" secondItem="8mQ-mk-CPd" secondAttribute="top" id="zjU-oD-jBu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="13c-Cj-zuE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="E9U-2F-Qep"/>
+                                <exclude reference="Q3x-qJ-Q15"/>
+                                <exclude reference="zjU-oD-jBu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="13c-Cj-zuE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="E9U-2F-Qep"/>
+                                <include reference="Q3x-qJ-Q15"/>
+                                <include reference="zjU-oD-jBu"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Settings" id="G2Z-qb-McI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vC-vh-a5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
