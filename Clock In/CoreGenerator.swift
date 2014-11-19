@@ -16,7 +16,7 @@ let CHECK_FOR_NUMBERS = "0123456789"
 
 class CoreGenerator {
     
-    var length = 0
+    var length = 13
     
     // 'O' for odd and 'E' for even
     let lefthandParities = [
@@ -113,26 +113,26 @@ class CoreGenerator {
         // Top spacing          = 1.5
         // Bottom spacing       = 2
         // Left & right spacing = 4
-        // Height               = 40
-        let width = length + 4
-        let size = CGSizeMake(CGFloat(width), 40)
+        // Height               = 4
+        let width = (length * 2) + 8
+        let size = CGSizeMake(CGFloat(width), 120)
         UIGraphicsBeginImageContextWithOptions(size, true, 0)
         let context = UIGraphicsGetCurrentContext()
         
-        CGContextSetShouldAntialias(context, false)
+        CGContextSetShouldAntialias(context, true)
         
         UIColor.whiteColor().setFill()
         UIColor.blackColor().setStroke()
         
         CGContextFillRect(context, CGRectMake(0, 0, size.width, size.height))
-        CGContextSetLineWidth(context, 1)
+        CGContextSetLineWidth(context, 2)
         
         for i in 0..<length {
             let character = completeBarcode[i]
             if character == "1" {
                 let x = i + (2 + 1)
-                CGContextMoveToPoint(context, CGFloat(x), 1.5)
-                CGContextAddLineToPoint(context, CGFloat(x), size.height - 4)
+                CGContextMoveToPoint(context, CGFloat(x) * 2, 1.5)
+                CGContextAddLineToPoint(context, CGFloat(x) * 2, size.height - 2)
             }
         }
         CGContextDrawPath(context, kCGPathFillStroke)

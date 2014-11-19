@@ -72,6 +72,6 @@ extension String {
 }
 
 
-var hahanumber = EmpNumToUPCA().convertEmpNum("72641217542")
+var hahanumber = EmpNumToUPCA().convertEmpNum("479318")
 
 

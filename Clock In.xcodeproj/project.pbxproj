@@ -195,6 +195,7 @@
 				TargetAttributes = {
 					AA2289FF1A05009300517DA1 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = ES947SD9KT;
 					};
 					AA228A141A05009300517DA1 = {
 						CreatedOnToolsVersion = 6.1;
