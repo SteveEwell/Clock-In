@@ -6,7 +6,10 @@
 //  Copyright (c) 2014 Steve Ewell. All rights reserved.
 //
 
-class EmpNumToUPCA {
+import Foundation
+import UIKit
+
+class EmpNumberToUPCA {
     
     func convertEmpNum(input: String) -> String {
         var upca: [Int] = self.stringToUPCA(input)

@@ -14,12 +14,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var employeeNameLable: UILabel!
     
     let generator:CoreGenerator = CoreGenerator()
+    let empNumberToUPC:EmpNumberToUPCA = EmpNumberToUPCA()
     
     var employeeName = "Steve"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var barCode:UIImage? = generator.generateCode("0000004781127")
+        var empNumber = empNumberToUPC.convertEmpNum("478112")
+        var barCode:UIImage? = generator.generateCode(empNumber)
         employeeNameLable.text = employeeName.uppercaseString
         barCodeView.image = barCode
         

@@ -33,8 +33,4 @@ extension String {
     func location(other: String) -> Int {
         return (self as NSString).rangeOfString(other).location
     }
-    
-    func contains(other: String) -> Bool {
-        return (self as NSString).containsString(other)
-    }
 }

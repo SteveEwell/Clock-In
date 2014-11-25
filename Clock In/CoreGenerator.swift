@@ -12,7 +12,6 @@ import UIKit
 import AVFoundation
 import CoreImage
 
-let CHECK_FOR_NUMBERS = "0123456789"
 
 class CoreGenerator {
     
@@ -52,7 +51,7 @@ class CoreGenerator {
         if length == 13 {
             for i in 0..<length {
                 let value = input[i]
-                if !CHECK_FOR_NUMBERS.contains(value!) {
+                if !value.isNumeric() {
                     return false
                 }
             }
