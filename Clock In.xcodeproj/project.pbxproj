@@ -20,6 +20,7 @@
 		AA30905F1A1F8938004C233D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30905E1A1F8938004C233D /* SettingsViewController.swift */; };
 		AADBA6A81A1A43FF00A7FCE1 /* CoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */; };
 		AADBA6AA1A1A517C00A7FCE1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBA6A91A1A517C00A7FCE1 /* UIColorExtension.swift */; };
+		AAE7A7851A24CB9A004FE7A1 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE7A7841A24CB9A004FE7A1 /* SettingsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		AA30905E1A1F8938004C233D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreGenerator.swift; path = "Clock In/CoreGenerator.swift"; sourceTree = SOURCE_ROOT; };
 		AADBA6A91A1A517C00A7FCE1 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
+		AAE7A7841A24CB9A004FE7A1 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +95,9 @@
 			children = (
 				AA228A2A1A05019000517DA1 /* Bar Code Classes */,
 				AA228A251A05015200517DA1 /* Assets */,
-				AA228A051A05009300517DA1 /* AppDelegate.swift */,
-				AA228A071A05009300517DA1 /* HomeViewController.swift */,
-				AA30905E1A1F8938004C233D /* SettingsViewController.swift */,
+				AAE7A77F1A2495EA004FE7A1 /* Views */,
 				AA228A091A05009300517DA1 /* Main.storyboard */,
+				AA228A051A05009300517DA1 /* AppDelegate.swift */,
 				AA228A0C1A05009300517DA1 /* Images.xcassets */,
 				AA228A0E1A05009300517DA1 /* LaunchScreen.xib */,
 				AA228A031A05009300517DA1 /* Supporting Files */,
@@ -147,6 +148,16 @@
 				AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */,
 			);
 			path = "Bar Code Classes";
+			sourceTree = "<group>";
+		};
+		AAE7A77F1A2495EA004FE7A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA228A071A05009300517DA1 /* HomeViewController.swift */,
+				AA30905E1A1F8938004C233D /* SettingsViewController.swift */,
+				AAE7A7841A24CB9A004FE7A1 /* SettingsTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 			files = (
 				AA1BC2241A1A10DD00571F5D /* StringExtensions.swift in Sources */,
 				AA1BC2261A1A11FC00571F5D /* EmpNumberToUPCA.swift in Sources */,
+				AAE7A7851A24CB9A004FE7A1 /* SettingsTableViewCell.swift in Sources */,
 				AA30905F1A1F8938004C233D /* SettingsViewController.swift in Sources */,
 				AA228A081A05009300517DA1 /* HomeViewController.swift in Sources */,
 				AA228A061A05009300517DA1 /* AppDelegate.swift in Sources */,
