@@ -9,17 +9,27 @@
 import UIKit
 
 class EditNameViewController: UITableViewController {
+    
+    var employeeName:String = String()
 
     @IBOutlet weak var nameEditableCell: SettingsEditableCell!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        nameEditableCell.cellTextField.text = NSUserDefaults.standardUserDefaults().stringForKey("employeeName")
 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        employeeName = nameEditableCell.cellTextField.text
+        NSUserDefaults.standardUserDefaults().setValue(employeeName, forKey: "employeeName")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        textField.resignFirstResponder()
+        return true
     }
 
     /*

@@ -10,8 +10,6 @@ import UIKit
 
 class SettingsViewController: UITableViewController, UITextFieldDelegate {
     
-    var name = "Steve"
-    var number = "478112"
     @IBOutlet weak var nameCellLabel: UILabel!
     @IBOutlet weak var numberCellLabel: UILabel!
     
@@ -19,8 +17,14 @@ class SettingsViewController: UITableViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameCellLabel.text = name
-        numberCellLabel.text = number
+        
+    }
+    
+    override func viewWillAppear(animated:Bool) {
+        super.viewWillAppear(true)
+        NSUserDefaults.standardUserDefaults().synchronize()
+        nameCellLabel.text = NSUserDefaults.standardUserDefaults().stringForKey("employeeName")
+        numberCellLabel.text = NSUserDefaults.standardUserDefaults().stringForKey("employeeNumber")
         
     }
     

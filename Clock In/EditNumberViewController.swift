@@ -11,9 +11,26 @@ import UIKit
 class EditNumberViewController: UITableViewController {
 
     @IBOutlet weak var numberEditableCell: SettingsEditableCell!
+    
+    var keyboardToolbar:UIToolbar = UIToolbar()
+    var flexBarButton:UIBarButtonItem = UIBarButtonItem()
+    var doneButton:UIBarButtonItem = UIBarButtonItem()
+    
+    var employeeNumber:String = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        employeeNumber = NSUserDefaults.standardUserDefaults().stringForKey("employeeNumber")!
+        numberEditableCell.cellTextField.text = employeeNumber
+        
+        keyboardToolbar.sizeToFit()
+        
+        flexBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        
+        doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "doneClicked:")
+        
+        keyboardToolbar.items = [flexBarButton, doneButton]
+        self.numberEditableCell.cellTextField.inputAccessoryView = keyboardToolbar
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +38,12 @@ class EditNumberViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func doneClicked(AnyObject) {
+        employeeNumber = numberEditableCell.cellTextField.text
+        NSUserDefaults.standardUserDefaults().setValue(employeeNumber, forKey: "employeeNumber")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        self.view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation

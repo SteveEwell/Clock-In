@@ -140,6 +140,7 @@
                     <connections>
                         <outlet property="barCodeView" destination="yF1-rT-lFj" id="s0D-p5-Y4A"/>
                         <outlet property="employeeNameLable" destination="MJK-7E-g7Y" id="IzQ-d5-3Gu"/>
+                        <outlet property="view" destination="kh9-bI-dsS" id="wVJ-Wk-CNn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -418,12 +419,12 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ew5-9k-bIa" id="Ffv-l8-pc9">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Steve" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mhg-bD-ma9">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mhg-bD-ma9">
                                                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                                     <connections>
-                                                        <outlet property="delegate" destination="QYB-Od-HBf" id="vOG-YH-aV6"/>
+                                                        <outlet property="delegate" destination="O3j-II-P16" id="zj0-SD-6q6"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -465,8 +466,12 @@
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="O3j-II-P16" id="kh6-Bw-SgB"/>
+                            <outlet property="delegate" destination="O3j-II-P16" id="GBA-C7-Xjn"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="nameEditableCell" destination="Ew5-9k-bIa" id="KXt-oB-IRh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="civ-rn-qQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -490,26 +495,44 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yya-cF-syL">
                                                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                    <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="8" y="7" width="384" height="30"/>
-                                                    </variation>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="yg8-wV-BvX" id="xHz-7g-fri"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yya-cF-syL" secondAttribute="bottom" constant="-1.5" id="Bls-kD-6h9"/>
+                                                <constraint firstItem="yya-cF-syL" firstAttribute="top" secondItem="bKk-cD-Ftf" secondAttribute="topMargin" constant="-1" id="CpU-nx-WMa"/>
+                                                <constraint firstItem="yya-cF-syL" firstAttribute="trailing" secondItem="bKk-cD-Ftf" secondAttribute="trailingMargin" id="EBp-FQ-euy"/>
+                                                <constraint firstItem="yya-cF-syL" firstAttribute="leading" secondItem="bKk-cD-Ftf" secondAttribute="leadingMargin" id="bso-eV-tOX"/>
+                                            </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="yya-cF-syL"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="Bls-kD-6h9"/>
+                                                    <exclude reference="CpU-nx-WMa"/>
+                                                    <exclude reference="EBp-FQ-euy"/>
+                                                    <exclude reference="bso-eV-tOX"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="yya-cF-syL"/>
                                                 </mask>
+                                                <mask key="constraints">
+                                                    <include reference="Bls-kD-6h9"/>
+                                                    <include reference="CpU-nx-WMa"/>
+                                                    <include reference="EBp-FQ-euy"/>
+                                                    <include reference="bso-eV-tOX"/>
+                                                </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cellTextField" destination="yya-cF-syL" id="N1a-OS-C1N"/>
+                                            <outlet property="cellTextField" destination="yya-cF-syL" id="qz2-nX-ww7"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -521,7 +544,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="numberEditableCell" destination="s2g-iK-iuN" id="rVh-UA-3Do"/>
+                        <outlet property="numberEditableCell" destination="s2g-iK-iuN" id="2AX-JY-vnl"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82O-Oc-u5d" userLabel="First Responder" sceneMemberID="firstResponder"/>

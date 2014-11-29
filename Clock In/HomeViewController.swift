@@ -16,15 +16,25 @@ class HomeViewController: UIViewController {
     let generator:CoreGenerator = CoreGenerator()
     let empNumberToUPC:EmpNumberToUPCA = EmpNumberToUPCA()
     
-    var employeeName = "Steve"
-
+    var employeeNameString:String? = String()
+    var employeeNumberString:String? = String()
+    var empNumber:String? = String()
+    var barCode:UIImage? = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var empNumber = empNumberToUPC.convertEmpNum("478112")
-        var barCode:UIImage? = generator.generateCode(empNumber)
-        employeeNameLable.text = employeeName.uppercaseString
-        barCodeView.image = barCode
         
+    }
+    
+    override func viewWillAppear(animated:Bool) {
+        super.viewWillAppear(true)
+        NSUserDefaults.standardUserDefaults().synchronize()
+        employeeNameString = NSUserDefaults.standardUserDefaults().stringForKey("employeeName")
+        employeeNumberString = NSUserDefaults.standardUserDefaults().stringForKey("employeeNumber")
+        empNumber = empNumberToUPC.convertEmpNum(employeeNumberString!)
+        barCode = generator.generateCode(empNumber!)
+        employeeNameLable.text = employeeNameString!.uppercaseString
+        barCodeView.image = barCode
     }
 
     override func didReceiveMemoryWarning() {
