@@ -11,6 +11,7 @@ import UIKit
 class EditNameViewController: UITableViewController {
     
     var employeeName:String = String()
+    
 
     @IBOutlet weak var nameEditableCell: SettingsEditableCell!
     override func viewDidLoad() {
@@ -26,10 +27,21 @@ class EditNameViewController: UITableViewController {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         employeeName = nameEditableCell.cellTextField.text
-        NSUserDefaults.standardUserDefaults().setValue(employeeName, forKey: "employeeName")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        if (employeeName.length() > 26 || employeeName.length() == 0) {
+            let alert = UIAlertController(title: "Name is too long or too short!", message: "Entered names must be between 1 and 26 characters long.", preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: alertHandler))
+            self.presentViewController(alert, animated: true, completion: nil)
+        } else {
+            NSUserDefaults.standardUserDefaults().setValue(employeeName, forKey: "employeeName")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
         textField.resignFirstResponder()
         return true
+    }
+    
+    func alertHandler(act:UIAlertAction!) {
+        NSUserDefaults.standardUserDefaults().setValue("Name", forKey: "employeeName")
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
 
     /*

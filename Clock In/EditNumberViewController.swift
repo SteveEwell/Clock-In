@@ -16,6 +16,7 @@ class EditNumberViewController: UITableViewController {
     var flexBarButton:UIBarButtonItem = UIBarButtonItem()
     var doneButton:UIBarButtonItem = UIBarButtonItem()
     
+    
     var employeeNumber:String = String()
     
     override func viewDidLoad() {
@@ -40,9 +41,20 @@ class EditNumberViewController: UITableViewController {
 
     @IBAction func doneClicked(AnyObject) {
         employeeNumber = numberEditableCell.cellTextField.text
-        NSUserDefaults.standardUserDefaults().setValue(employeeNumber, forKey: "employeeNumber")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        if (employeeNumber.length() > 12 || employeeNumber.length() == 0) {
+            let alert = UIAlertController(title: "Number out of range!", message: "Enter a number between 1 and 999999.", preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: alertHandler))
+            self.presentViewController(alert, animated: true, completion: nil)
+        } else {
+            NSUserDefaults.standardUserDefaults().setValue(employeeNumber, forKey: "employeeNumber")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
         self.view.endEditing(true)
+    }
+    
+    func alertHandler(act:UIAlertAction!) {
+        NSUserDefaults.standardUserDefaults().setValue("123456", forKey: "employeeNumber")
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
 
     /*

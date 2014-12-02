@@ -22,7 +22,6 @@
 		AA8082CB1A27584300E1BBC9 /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8082CA1A27584300E1BBC9 /* EditNameViewController.swift */; };
 		AA8082CD1A27587600E1BBC9 /* EditNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8082CC1A27587600E1BBC9 /* EditNumberViewController.swift */; };
 		AADBA6A81A1A43FF00A7FCE1 /* CoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */; };
-		AADBA6AA1A1A517C00A7FCE1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBA6A91A1A517C00A7FCE1 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +54,6 @@
 		AA8082CA1A27584300E1BBC9 /* EditNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
 		AA8082CC1A27587600E1BBC9 /* EditNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNumberViewController.swift; sourceTree = "<group>"; };
 		AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreGenerator.swift; path = "Clock In/CoreGenerator.swift"; sourceTree = SOURCE_ROOT; };
-		AADBA6A91A1A517C00A7FCE1 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +146,6 @@
 			children = (
 				AA1BC2251A1A11FB00571F5D /* EmpNumberToUPCA.swift */,
 				AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */,
-				AADBA6A91A1A517C00A7FCE1 /* UIColorExtension.swift */,
 				AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */,
 			);
 			path = "Bar Code Classes";
@@ -278,7 +275,6 @@
 				AA228A081A05009300517DA1 /* HomeViewController.swift in Sources */,
 				AA228A061A05009300517DA1 /* AppDelegate.swift in Sources */,
 				AADBA6A81A1A43FF00A7FCE1 /* CoreGenerator.swift in Sources */,
-				AADBA6AA1A1A517C00A7FCE1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
