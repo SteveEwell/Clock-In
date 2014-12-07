@@ -33,6 +33,17 @@ class EditNumberViewController: UITableViewController {
         keyboardToolbar.items = [flexBarButton, doneButton]
         self.numberEditableCell.cellTextField.inputAccessoryView = keyboardToolbar
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(true)
+        employeeNumber = numberEditableCell.cellTextField.text
+        if (employeeNumber.length() > 12 || employeeNumber.length() == 0) {
+            NSUserDefaults.standardUserDefaults().synchronize()
+        } else {
+            NSUserDefaults.standardUserDefaults().setValue(employeeNumber, forKey: "employeeNumber")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -19,6 +19,17 @@ class EditNameViewController: UITableViewController {
         nameEditableCell.cellTextField.text = NSUserDefaults.standardUserDefaults().stringForKey("employeeName")
 
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(true)
+        employeeName = nameEditableCell.cellTextField.text
+        if (employeeName.length() > 26 || employeeName.length() == 0) {
+            NSUserDefaults.standardUserDefaults().synchronize()
+        } else {
+            NSUserDefaults.standardUserDefaults().setValue(employeeName, forKey: "employeeName")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
