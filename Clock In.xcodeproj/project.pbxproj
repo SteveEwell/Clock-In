@@ -21,6 +21,7 @@
 		AA8082C91A2756AD00E1BBC9 /* SettingsEditableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8082C81A2756AD00E1BBC9 /* SettingsEditableCell.swift */; };
 		AA8082CB1A27584300E1BBC9 /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8082CA1A27584300E1BBC9 /* EditNameViewController.swift */; };
 		AA8082CD1A27587600E1BBC9 /* EditNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8082CC1A27587600E1BBC9 /* EditNumberViewController.swift */; };
+		AA9E783B1A3754F30036C8FD /* Clock-In-Logo-Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9E783A1A3754F30036C8FD /* Clock-In-Logo-Launch.png */; };
 		AADBA6A81A1A43FF00A7FCE1 /* CoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		AA8082C81A2756AD00E1BBC9 /* SettingsEditableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEditableCell.swift; sourceTree = "<group>"; };
 		AA8082CA1A27584300E1BBC9 /* EditNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
 		AA8082CC1A27587600E1BBC9 /* EditNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNumberViewController.swift; sourceTree = "<group>"; };
+		AA9E783A1A3754F30036C8FD /* Clock-In-Logo-Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-In-Logo-Launch.png"; sourceTree = "<group>"; };
 		AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreGenerator.swift; path = "Clock In/CoreGenerator.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 		AA228A251A05015200517DA1 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AA9E783A1A3754F30036C8FD /* Clock-In-Logo-Launch.png */,
 				AA228A261A05015200517DA1 /* ClockInBarcode.png */,
 				AA228A271A05015200517DA1 /* ClockInBarcode@2x.png */,
 			);
@@ -249,6 +252,7 @@
 				AA228A0B1A05009300517DA1 /* Main.storyboard in Resources */,
 				AA228A101A05009300517DA1 /* LaunchScreen.xib in Resources */,
 				AA228A0D1A05009300517DA1 /* Images.xcassets in Resources */,
+				AA9E783B1A3754F30036C8FD /* Clock-In-Logo-Launch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

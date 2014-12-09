@@ -132,7 +132,7 @@
                     <connections>
                         <outlet property="barCodeView" destination="yF1-rT-lFj" id="s0D-p5-Y4A"/>
                         <outlet property="employeeNameLable" destination="MJK-7E-g7Y" id="IzQ-d5-3Gu"/>
-                        <outlet property="view" destination="kh9-bI-dsS" id="wVJ-Wk-CNn"/>
+                        <outlet property="view" destination="kh9-bI-dsS" id="ges-Oq-ZUR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
