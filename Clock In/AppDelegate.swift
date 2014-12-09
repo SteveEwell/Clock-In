@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        NSUserDefaults.standardUserDefaults().registerDefaults(["employeeName" : "Name", "employeeNumber" : "123456"])
+        NSUserDefaults.standardUserDefaults().registerDefaults(["employeeName" : "Name", "employeeNumber" : "123456", "firstLaunch" : true])
         
         NSUserDefaults.standardUserDefaults().synchronize()
         

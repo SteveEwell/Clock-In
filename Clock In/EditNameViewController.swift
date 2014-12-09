@@ -17,6 +17,7 @@ class EditNameViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameEditableCell.cellTextField.text = NSUserDefaults.standardUserDefaults().stringForKey("employeeName")
+        nameEditableCell.cellTextField.becomeFirstResponder()
 
     }
     
@@ -45,6 +46,7 @@ class EditNameViewController: UITableViewController {
         } else {
             NSUserDefaults.standardUserDefaults().setValue(employeeName, forKey: "employeeName")
             NSUserDefaults.standardUserDefaults().synchronize()
+            performSegueWithIdentifier("toSettings", sender: self)
         }
         textField.resignFirstResponder()
         return true

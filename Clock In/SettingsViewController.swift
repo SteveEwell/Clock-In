@@ -33,4 +33,9 @@ class SettingsViewController: UITableViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func unwindToSettings(segue: UIStoryboardSegue) {
+        // Leave empty
+    }
+    
+    
 }

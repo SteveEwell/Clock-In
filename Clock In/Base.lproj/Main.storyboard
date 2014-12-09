@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MJK-7E-g7Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MJK-7E-g7Y">
                                 <rect key="frame" x="285" y="207" width="46" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="KXz-7K-QMT"/>
@@ -92,13 +92,13 @@
                                 <exclude reference="yF1-rT-lFj"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="BEU-CQ-GAl"/>
+                                <exclude reference="cdM-es-WVV"/>
                                 <exclude reference="2NF-wF-Y6h"/>
                                 <exclude reference="QtX-S4-a5P"/>
                                 <exclude reference="bq3-lA-xge"/>
                                 <exclude reference="eg3-eP-Hka"/>
                                 <exclude reference="mTw-Cl-dcw"/>
-                                <exclude reference="BEU-CQ-GAl"/>
-                                <exclude reference="cdM-es-WVV"/>
                                 <exclude reference="WkU-ei-y2N"/>
                             </mask>
                         </variation>
@@ -107,17 +107,17 @@
                                 <include reference="yF1-rT-lFj"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="QtX-S4-a5P"/>
                                 <include reference="cdM-es-WVV"/>
+                                <include reference="QtX-S4-a5P"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="BEU-CQ-GAl"/>
                                 <include reference="2NF-wF-Y6h"/>
                                 <include reference="bq3-lA-xge"/>
                                 <include reference="eg3-eP-Hka"/>
                                 <include reference="mTw-Cl-dcw"/>
-                                <include reference="BEU-CQ-GAl"/>
                                 <include reference="WkU-ei-y2N"/>
                             </mask>
                         </variation>
@@ -176,7 +176,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="O3j-II-P16" kind="show" id="p64-6g-dzj"/>
+                                            <segue destination="O3j-II-P16" kind="show" identifier="toName" id="p64-6g-dzj"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -225,6 +225,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLN-Z0-KJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DfM-gW-6vE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1351.5" y="384"/>
         </scene>
@@ -296,6 +297,7 @@
                     </tableView>
                     <connections>
                         <outlet property="nameEditableCell" destination="Ew5-9k-bIa" id="KXt-oB-IRh"/>
+                        <segue destination="DfM-gW-6vE" kind="unwind" identifier="toSettings" unwindAction="unwindToSettings:" id="bpp-DV-8Bh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="civ-rn-qQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -370,6 +372,7 @@
                     </tableView>
                     <connections>
                         <outlet property="numberEditableCell" destination="s2g-iK-iuN" id="2AX-JY-vnl"/>
+                        <segue destination="DfM-gW-6vE" kind="unwind" identifier="toSettings" unwindAction="unwindToSettings:" id="hlG-CT-Gul"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82O-Oc-u5d" userLabel="First Responder" sceneMemberID="firstResponder"/>

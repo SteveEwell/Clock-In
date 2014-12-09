@@ -32,6 +32,7 @@ class EditNumberViewController: UITableViewController {
         
         keyboardToolbar.items = [flexBarButton, doneButton]
         self.numberEditableCell.cellTextField.inputAccessoryView = keyboardToolbar
+        numberEditableCell.cellTextField.becomeFirstResponder()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -59,6 +60,7 @@ class EditNumberViewController: UITableViewController {
         } else {
             NSUserDefaults.standardUserDefaults().setValue(employeeNumber, forKey: "employeeNumber")
             NSUserDefaults.standardUserDefaults().synchronize()
+            performSegueWithIdentifier("toSettings", sender: self)
         }
         self.view.endEditing(true)
     }
