@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA2289FF1A05009300517DA1"
+               BlueprintIdentifier = "AA70026C1A4AE3F000C94EA2"
                BuildableName = "Clock In.app"
                BlueprintName = "Clock In"
                ReferencedContainer = "container:Clock In.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA228A141A05009300517DA1"
+               BlueprintIdentifier = "AA7002851A4AE3F000C94EA2"
                BuildableName = "Clock InTests.xctest"
                BlueprintName = "Clock InTests"
                ReferencedContainer = "container:Clock In.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA228A141A05009300517DA1"
+               BlueprintIdentifier = "AA7002851A4AE3F000C94EA2"
                BuildableName = "Clock InTests.xctest"
                BlueprintName = "Clock InTests"
                ReferencedContainer = "container:Clock In.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA2289FF1A05009300517DA1"
+            BlueprintIdentifier = "AA70026C1A4AE3F000C94EA2"
             BuildableName = "Clock In.app"
             BlueprintName = "Clock In"
             ReferencedContainer = "container:Clock In.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA2289FF1A05009300517DA1"
+            BlueprintIdentifier = "AA70026C1A4AE3F000C94EA2"
             BuildableName = "Clock In.app"
             BlueprintName = "Clock In"
             ReferencedContainer = "container:Clock In.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA2289FF1A05009300517DA1"
+            BlueprintIdentifier = "AA70026C1A4AE3F000C94EA2"
             BuildableName = "Clock In.app"
             BlueprintName = "Clock In"
             ReferencedContainer = "container:Clock In.xcodeproj">

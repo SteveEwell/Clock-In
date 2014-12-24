@@ -7,66 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA1BC2241A1A10DD00571F5D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */; };
-		AA1BC2261A1A11FC00571F5D /* EmpNumberToUPCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BC2251A1A11FB00571F5D /* EmpNumberToUPCA.swift */; };
-		AA228A061A05009300517DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA228A051A05009300517DA1 /* AppDelegate.swift */; };
-		AA228A081A05009300517DA1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA228A071A05009300517DA1 /* HomeViewController.swift */; };
-		AA228A0B1A05009300517DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA228A091A05009300517DA1 /* Main.storyboard */; };
-		AA228A0D1A05009300517DA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA228A0C1A05009300517DA1 /* Images.xcassets */; };
-		AA228A101A05009300517DA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA228A0E1A05009300517DA1 /* LaunchScreen.xib */; };
-		AA228A1C1A05009300517DA1 /* Clock_InTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA228A1B1A05009300517DA1 /* Clock_InTests.swift */; };
-		AA228A281A05015200517DA1 /* ClockInBarcode.png in Resources */ = {isa = PBXBuildFile; fileRef = AA228A261A05015200517DA1 /* ClockInBarcode.png */; };
-		AA228A291A05015200517DA1 /* ClockInBarcode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA228A271A05015200517DA1 /* ClockInBarcode@2x.png */; };
-		AA30905F1A1F8938004C233D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30905E1A1F8938004C233D /* SettingsViewController.swift */; };
-		AA8082C91A2756AD00E1BBC9 /* SettingsEditableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8082C81A2756AD00E1BBC9 /* SettingsEditableCell.swift */; };
-		AA8082CB1A27584300E1BBC9 /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8082CA1A27584300E1BBC9 /* EditNameViewController.swift */; };
-		AA8082CD1A27587600E1BBC9 /* EditNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8082CC1A27587600E1BBC9 /* EditNumberViewController.swift */; };
-		AA9E783B1A3754F30036C8FD /* Clock-In-Logo-Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = AA9E783A1A3754F30036C8FD /* Clock-In-Logo-Launch.png */; };
-		AADBA6A81A1A43FF00A7FCE1 /* CoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */; };
+		AA7002731A4AE3F000C94EA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002721A4AE3F000C94EA2 /* main.m */; };
+		AA7002761A4AE3F000C94EA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002751A4AE3F000C94EA2 /* AppDelegate.m */; };
+		AA7002791A4AE3F000C94EA2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002781A4AE3F000C94EA2 /* HomeViewController.m */; };
+		AA70027E1A4AE3F000C94EA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA70027D1A4AE3F000C94EA2 /* Images.xcassets */; };
+		AA7002811A4AE3F000C94EA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA70027F1A4AE3F000C94EA2 /* LaunchScreen.xib */; };
+		AA70028D1A4AE3F000C94EA2 /* Clock_InTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70028C1A4AE3F000C94EA2 /* Clock_InTests.m */; };
+		AA7002991A4AEA6300C94EA2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002981A4AEA6300C94EA2 /* SettingsViewController.m */; };
+		AA70029C1A4AEAE400C94EA2 /* EditNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70029B1A4AEAE400C94EA2 /* EditNameViewController.m */; };
+		AA70029F1A4AEB0D00C94EA2 /* EditNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70029E1A4AEB0D00C94EA2 /* EditNumberViewController.m */; };
+		AA7002A51A4AEBA500C94EA2 /* BarcodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */; };
+		AA7002A71A4AF93D00C94EA2 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7002A61A4AF93D00C94EA2 /* App.storyboard */; };
+		AA7002AA1A4B10AB00C94EA2 /* BarcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002A91A4B10AB00C94EA2 /* BarcodeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AA228A161A05009300517DA1 /* PBXContainerItemProxy */ = {
+		AA7002871A4AE3F000C94EA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AA2289F81A05009300517DA1 /* Project object */;
+			containerPortal = AA7002651A4AE3F000C94EA2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA2289FF1A05009300517DA1;
+			remoteGlobalIDString = AA70026C1A4AE3F000C94EA2;
 			remoteInfo = "Clock In";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = "Clock In/StringExtensions.swift"; sourceTree = SOURCE_ROOT; };
-		AA1BC2251A1A11FB00571F5D /* EmpNumberToUPCA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmpNumberToUPCA.swift; path = "Clock In/EmpNumberToUPCA.swift"; sourceTree = SOURCE_ROOT; };
-		AA228A001A05009300517DA1 /* Clock In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA228A041A05009300517DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA228A051A05009300517DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA228A071A05009300517DA1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		AA228A0A1A05009300517DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AA228A0C1A05009300517DA1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AA228A0F1A05009300517DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AA228A151A05009300517DA1 /* Clock InTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clock InTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA228A1A1A05009300517DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA228A1B1A05009300517DA1 /* Clock_InTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_InTests.swift; sourceTree = "<group>"; };
-		AA228A261A05015200517DA1 /* ClockInBarcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClockInBarcode.png; sourceTree = "<group>"; };
-		AA228A271A05015200517DA1 /* ClockInBarcode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClockInBarcode@2x.png"; sourceTree = "<group>"; };
-		AA30905E1A1F8938004C233D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		AA8082C81A2756AD00E1BBC9 /* SettingsEditableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsEditableCell.swift; sourceTree = "<group>"; };
-		AA8082CA1A27584300E1BBC9 /* EditNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
-		AA8082CC1A27587600E1BBC9 /* EditNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNumberViewController.swift; sourceTree = "<group>"; };
-		AA9E783A1A3754F30036C8FD /* Clock-In-Logo-Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-In-Logo-Launch.png"; sourceTree = "<group>"; };
-		AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreGenerator.swift; path = "Clock In/CoreGenerator.swift"; sourceTree = SOURCE_ROOT; };
+		AA70026D1A4AE3F000C94EA2 /* Clock In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7002711A4AE3F000C94EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA7002721A4AE3F000C94EA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA7002741A4AE3F000C94EA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA7002751A4AE3F000C94EA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA7002771A4AE3F000C94EA2 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		AA7002781A4AE3F000C94EA2 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AA70027D1A4AE3F000C94EA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA7002801A4AE3F000C94EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AA7002861A4AE3F000C94EA2 /* Clock InTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clock InTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA70028B1A4AE3F000C94EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA70028C1A4AE3F000C94EA2 /* Clock_InTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clock_InTests.m; sourceTree = "<group>"; };
+		AA7002971A4AEA6300C94EA2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		AA7002981A4AEA6300C94EA2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		AA70029A1A4AEAE400C94EA2 /* EditNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditNameViewController.h; sourceTree = "<group>"; };
+		AA70029B1A4AEAE400C94EA2 /* EditNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditNameViewController.m; sourceTree = "<group>"; };
+		AA70029D1A4AEB0D00C94EA2 /* EditNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditNumberViewController.h; sourceTree = "<group>"; };
+		AA70029E1A4AEB0D00C94EA2 /* EditNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditNumberViewController.m; sourceTree = "<group>"; };
+		AA7002A31A4AEBA500C94EA2 /* BarcodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeGenerator.h; sourceTree = "<group>"; };
+		AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeGenerator.m; sourceTree = "<group>"; };
+		AA7002A61A4AF93D00C94EA2 /* App.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
+		AA7002A81A4B10AB00C94EA2 /* BarcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeView.h; sourceTree = "<group>"; };
+		AA7002A91A4B10AB00C94EA2 /* BarcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA2289FD1A05009300517DA1 /* Frameworks */ = {
+		AA70026A1A4AE3F000C94EA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA228A121A05009300517DA1 /* Frameworks */ = {
+		AA7002831A4AE3F000C94EA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,106 +75,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA2289F71A05009300517DA1 = {
+		AA7002641A4AE3F000C94EA2 = {
 			isa = PBXGroup;
 			children = (
-				AA228A021A05009300517DA1 /* Clock In */,
-				AA228A181A05009300517DA1 /* Clock InTests */,
-				AA228A011A05009300517DA1 /* Products */,
+				AA70026F1A4AE3F000C94EA2 /* Clock In */,
+				AA7002891A4AE3F000C94EA2 /* Clock InTests */,
+				AA70026E1A4AE3F000C94EA2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AA228A011A05009300517DA1 /* Products */ = {
+		AA70026E1A4AE3F000C94EA2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA228A001A05009300517DA1 /* Clock In.app */,
-				AA228A151A05009300517DA1 /* Clock InTests.xctest */,
+				AA70026D1A4AE3F000C94EA2 /* Clock In.app */,
+				AA7002861A4AE3F000C94EA2 /* Clock InTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA228A021A05009300517DA1 /* Clock In */ = {
+		AA70026F1A4AE3F000C94EA2 /* Clock In */ = {
 			isa = PBXGroup;
 			children = (
-				AA228A2A1A05019000517DA1 /* Bar Code Classes */,
-				AA228A251A05015200517DA1 /* Assets */,
-				AAE7A77F1A2495EA004FE7A1 /* Views */,
-				AA228A091A05009300517DA1 /* Main.storyboard */,
-				AA228A051A05009300517DA1 /* AppDelegate.swift */,
-				AA228A0C1A05009300517DA1 /* Images.xcassets */,
-				AA228A0E1A05009300517DA1 /* LaunchScreen.xib */,
-				AA228A031A05009300517DA1 /* Supporting Files */,
+				AA7002A21A4AEB6A00C94EA2 /* Models */,
+				AA7002A11A4AEB4C00C94EA2 /* Delegates */,
+				AA7002A01A4AEB4300C94EA2 /* Views */,
+				AA7002961A4AE9E100C94EA2 /* Controlers */,
+				AA70027D1A4AE3F000C94EA2 /* Images.xcassets */,
+				AA70027F1A4AE3F000C94EA2 /* LaunchScreen.xib */,
+				AA7002701A4AE3F000C94EA2 /* Supporting Files */,
 			);
 			path = "Clock In";
 			sourceTree = "<group>";
 		};
-		AA228A031A05009300517DA1 /* Supporting Files */ = {
+		AA7002701A4AE3F000C94EA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA228A041A05009300517DA1 /* Info.plist */,
+				AA7002711A4AE3F000C94EA2 /* Info.plist */,
+				AA7002721A4AE3F000C94EA2 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AA228A181A05009300517DA1 /* Clock InTests */ = {
+		AA7002891A4AE3F000C94EA2 /* Clock InTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA228A1B1A05009300517DA1 /* Clock_InTests.swift */,
-				AA228A191A05009300517DA1 /* Supporting Files */,
+				AA70028C1A4AE3F000C94EA2 /* Clock_InTests.m */,
+				AA70028A1A4AE3F000C94EA2 /* Supporting Files */,
 			);
 			path = "Clock InTests";
 			sourceTree = "<group>";
 		};
-		AA228A191A05009300517DA1 /* Supporting Files */ = {
+		AA70028A1A4AE3F000C94EA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA228A1A1A05009300517DA1 /* Info.plist */,
+				AA70028B1A4AE3F000C94EA2 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AA228A251A05015200517DA1 /* Assets */ = {
+		AA7002961A4AE9E100C94EA2 /* Controlers */ = {
 			isa = PBXGroup;
 			children = (
-				AA9E783A1A3754F30036C8FD /* Clock-In-Logo-Launch.png */,
-				AA228A261A05015200517DA1 /* ClockInBarcode.png */,
-				AA228A271A05015200517DA1 /* ClockInBarcode@2x.png */,
+				AA7002771A4AE3F000C94EA2 /* HomeViewController.h */,
+				AA7002781A4AE3F000C94EA2 /* HomeViewController.m */,
+				AA7002971A4AEA6300C94EA2 /* SettingsViewController.h */,
+				AA7002981A4AEA6300C94EA2 /* SettingsViewController.m */,
+				AA70029A1A4AEAE400C94EA2 /* EditNameViewController.h */,
+				AA70029B1A4AEAE400C94EA2 /* EditNameViewController.m */,
+				AA70029D1A4AEB0D00C94EA2 /* EditNumberViewController.h */,
+				AA70029E1A4AEB0D00C94EA2 /* EditNumberViewController.m */,
 			);
-			path = Assets;
+			name = Controlers;
 			sourceTree = "<group>";
 		};
-		AA228A2A1A05019000517DA1 /* Bar Code Classes */ = {
+		AA7002A01A4AEB4300C94EA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AA1BC2251A1A11FB00571F5D /* EmpNumberToUPCA.swift */,
-				AADBA6A71A1A43FF00A7FCE1 /* CoreGenerator.swift */,
-				AA1BC2231A1A10DD00571F5D /* StringExtensions.swift */,
-			);
-			path = "Bar Code Classes";
-			sourceTree = "<group>";
-		};
-		AAE7A77F1A2495EA004FE7A1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				AA228A071A05009300517DA1 /* HomeViewController.swift */,
-				AA30905E1A1F8938004C233D /* SettingsViewController.swift */,
-				AA8082CA1A27584300E1BBC9 /* EditNameViewController.swift */,
-				AA8082CC1A27587600E1BBC9 /* EditNumberViewController.swift */,
-				AA8082C81A2756AD00E1BBC9 /* SettingsEditableCell.swift */,
+				AA7002A61A4AF93D00C94EA2 /* App.storyboard */,
+				AA7002A81A4B10AB00C94EA2 /* BarcodeView.h */,
+				AA7002A91A4B10AB00C94EA2 /* BarcodeView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		AA7002A11A4AEB4C00C94EA2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AA7002741A4AE3F000C94EA2 /* AppDelegate.h */,
+				AA7002751A4AE3F000C94EA2 /* AppDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		AA7002A21A4AEB6A00C94EA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA7002A31A4AEBA500C94EA2 /* BarcodeGenerator.h */,
+				AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA2289FF1A05009300517DA1 /* Clock In */ = {
+		AA70026C1A4AE3F000C94EA2 /* Clock In */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA228A1F1A05009300517DA1 /* Build configuration list for PBXNativeTarget "Clock In" */;
+			buildConfigurationList = AA7002901A4AE3F000C94EA2 /* Build configuration list for PBXNativeTarget "Clock In" */;
 			buildPhases = (
-				AA2289FC1A05009300517DA1 /* Sources */,
-				AA2289FD1A05009300517DA1 /* Frameworks */,
-				AA2289FE1A05009300517DA1 /* Resources */,
+				AA7002691A4AE3F000C94EA2 /* Sources */,
+				AA70026A1A4AE3F000C94EA2 /* Frameworks */,
+				AA70026B1A4AE3F000C94EA2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,47 +193,47 @@
 			);
 			name = "Clock In";
 			productName = "Clock In";
-			productReference = AA228A001A05009300517DA1 /* Clock In.app */;
+			productReference = AA70026D1A4AE3F000C94EA2 /* Clock In.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA228A141A05009300517DA1 /* Clock InTests */ = {
+		AA7002851A4AE3F000C94EA2 /* Clock InTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA228A221A05009300517DA1 /* Build configuration list for PBXNativeTarget "Clock InTests" */;
+			buildConfigurationList = AA7002931A4AE3F000C94EA2 /* Build configuration list for PBXNativeTarget "Clock InTests" */;
 			buildPhases = (
-				AA228A111A05009300517DA1 /* Sources */,
-				AA228A121A05009300517DA1 /* Frameworks */,
-				AA228A131A05009300517DA1 /* Resources */,
+				AA7002821A4AE3F000C94EA2 /* Sources */,
+				AA7002831A4AE3F000C94EA2 /* Frameworks */,
+				AA7002841A4AE3F000C94EA2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA228A171A05009300517DA1 /* PBXTargetDependency */,
+				AA7002881A4AE3F000C94EA2 /* PBXTargetDependency */,
 			);
 			name = "Clock InTests";
 			productName = "Clock InTests";
-			productReference = AA228A151A05009300517DA1 /* Clock InTests.xctest */;
+			productReference = AA7002861A4AE3F000C94EA2 /* Clock InTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AA2289F81A05009300517DA1 /* Project object */ = {
+		AA7002651A4AE3F000C94EA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Steve Ewell";
 				TargetAttributes = {
-					AA2289FF1A05009300517DA1 = {
-						CreatedOnToolsVersion = 6.1;
+					AA70026C1A4AE3F000C94EA2 = {
+						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = ES947SD9KT;
 					};
-					AA228A141A05009300517DA1 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = AA2289FF1A05009300517DA1;
+					AA7002851A4AE3F000C94EA2 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = AA70026C1A4AE3F000C94EA2;
 					};
 				};
 			};
-			buildConfigurationList = AA2289FB1A05009300517DA1 /* Build configuration list for PBXProject "Clock In" */;
+			buildConfigurationList = AA7002681A4AE3F000C94EA2 /* Build configuration list for PBXProject "Clock In" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,32 +241,29 @@
 				en,
 				Base,
 			);
-			mainGroup = AA2289F71A05009300517DA1;
-			productRefGroup = AA228A011A05009300517DA1 /* Products */;
+			mainGroup = AA7002641A4AE3F000C94EA2;
+			productRefGroup = AA70026E1A4AE3F000C94EA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA2289FF1A05009300517DA1 /* Clock In */,
-				AA228A141A05009300517DA1 /* Clock InTests */,
+				AA70026C1A4AE3F000C94EA2 /* Clock In */,
+				AA7002851A4AE3F000C94EA2 /* Clock InTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AA2289FE1A05009300517DA1 /* Resources */ = {
+		AA70026B1A4AE3F000C94EA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA228A281A05015200517DA1 /* ClockInBarcode.png in Resources */,
-				AA228A291A05015200517DA1 /* ClockInBarcode@2x.png in Resources */,
-				AA228A0B1A05009300517DA1 /* Main.storyboard in Resources */,
-				AA228A101A05009300517DA1 /* LaunchScreen.xib in Resources */,
-				AA228A0D1A05009300517DA1 /* Images.xcassets in Resources */,
-				AA9E783B1A3754F30036C8FD /* Clock-In-Logo-Launch.png in Resources */,
+				AA7002811A4AE3F000C94EA2 /* LaunchScreen.xib in Resources */,
+				AA70027E1A4AE3F000C94EA2 /* Images.xcassets in Resources */,
+				AA7002A71A4AF93D00C94EA2 /* App.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA228A131A05009300517DA1 /* Resources */ = {
+		AA7002841A4AE3F000C94EA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,53 +273,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AA2289FC1A05009300517DA1 /* Sources */ = {
+		AA7002691A4AE3F000C94EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA8082CB1A27584300E1BBC9 /* EditNameViewController.swift in Sources */,
-				AA8082CD1A27587600E1BBC9 /* EditNumberViewController.swift in Sources */,
-				AA8082C91A2756AD00E1BBC9 /* SettingsEditableCell.swift in Sources */,
-				AA1BC2241A1A10DD00571F5D /* StringExtensions.swift in Sources */,
-				AA1BC2261A1A11FC00571F5D /* EmpNumberToUPCA.swift in Sources */,
-				AA30905F1A1F8938004C233D /* SettingsViewController.swift in Sources */,
-				AA228A081A05009300517DA1 /* HomeViewController.swift in Sources */,
-				AA228A061A05009300517DA1 /* AppDelegate.swift in Sources */,
-				AADBA6A81A1A43FF00A7FCE1 /* CoreGenerator.swift in Sources */,
+				AA7002791A4AE3F000C94EA2 /* HomeViewController.m in Sources */,
+				AA70029F1A4AEB0D00C94EA2 /* EditNumberViewController.m in Sources */,
+				AA70029C1A4AEAE400C94EA2 /* EditNameViewController.m in Sources */,
+				AA7002AA1A4B10AB00C94EA2 /* BarcodeView.m in Sources */,
+				AA7002761A4AE3F000C94EA2 /* AppDelegate.m in Sources */,
+				AA7002731A4AE3F000C94EA2 /* main.m in Sources */,
+				AA7002A51A4AEBA500C94EA2 /* BarcodeGenerator.m in Sources */,
+				AA7002991A4AEA6300C94EA2 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA228A111A05009300517DA1 /* Sources */ = {
+		AA7002821A4AE3F000C94EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA228A1C1A05009300517DA1 /* Clock_InTests.swift in Sources */,
+				AA70028D1A4AE3F000C94EA2 /* Clock_InTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA228A171A05009300517DA1 /* PBXTargetDependency */ = {
+		AA7002881A4AE3F000C94EA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA2289FF1A05009300517DA1 /* Clock In */;
-			targetProxy = AA228A161A05009300517DA1 /* PBXContainerItemProxy */;
+			target = AA70026C1A4AE3F000C94EA2 /* Clock In */;
+			targetProxy = AA7002871A4AE3F000C94EA2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA228A091A05009300517DA1 /* Main.storyboard */ = {
+		AA70027F1A4AE3F000C94EA2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA228A0A1A05009300517DA1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AA228A0E1A05009300517DA1 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA228A0F1A05009300517DA1 /* Base */,
+				AA7002801A4AE3F000C94EA2 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -320,7 +318,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AA228A1D1A05009300517DA1 /* Debug */ = {
+		AA70028E1A4AE3F000C94EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,11 +356,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		AA228A1E1A05009300517DA1 /* Release */ = {
+		AA70028F1A4AE3F000C94EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -397,39 +394,31 @@
 			};
 			name = Release;
 		};
-		AA228A201A05009300517DA1 /* Debug */ = {
+		AA7002911A4AE3F000C94EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Clock In/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		AA228A211A05009300517DA1 /* Release */ = {
+		AA7002921A4AE3F000C94EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Clock In/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
-		AA228A231A05009300517DA1 /* Debug */ = {
+		AA7002941A4AE3F000C94EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,7 +437,7 @@
 			};
 			name = Debug;
 		};
-		AA228A241A05009300517DA1 /* Release */ = {
+		AA7002951A4AE3F000C94EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,34 +455,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA2289FB1A05009300517DA1 /* Build configuration list for PBXProject "Clock In" */ = {
+		AA7002681A4AE3F000C94EA2 /* Build configuration list for PBXProject "Clock In" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA228A1D1A05009300517DA1 /* Debug */,
-				AA228A1E1A05009300517DA1 /* Release */,
+				AA70028E1A4AE3F000C94EA2 /* Debug */,
+				AA70028F1A4AE3F000C94EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA228A1F1A05009300517DA1 /* Build configuration list for PBXNativeTarget "Clock In" */ = {
+		AA7002901A4AE3F000C94EA2 /* Build configuration list for PBXNativeTarget "Clock In" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA228A201A05009300517DA1 /* Debug */,
-				AA228A211A05009300517DA1 /* Release */,
+				AA7002911A4AE3F000C94EA2 /* Debug */,
+				AA7002921A4AE3F000C94EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		AA228A221A05009300517DA1 /* Build configuration list for PBXNativeTarget "Clock InTests" */ = {
+		AA7002931A4AE3F000C94EA2 /* Build configuration list for PBXNativeTarget "Clock InTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA228A231A05009300517DA1 /* Debug */,
-				AA228A241A05009300517DA1 /* Release */,
+				AA7002941A4AE3F000C94EA2 /* Debug */,
+				AA7002951A4AE3F000C94EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AA2289F81A05009300517DA1 /* Project object */;
+	rootObject = AA7002651A4AE3F000C94EA2 /* Project object */;
 }
