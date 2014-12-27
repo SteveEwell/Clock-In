@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[NSUserDefaults standardUserDefaults]registerDefaults:@{@"employeeName":@"Name", @"employeeNumber": @"123456", @"firstLaunch":@YES}];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+    
     return YES;
 }
 

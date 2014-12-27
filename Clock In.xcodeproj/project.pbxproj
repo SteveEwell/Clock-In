@@ -18,7 +18,6 @@
 		AA70029F1A4AEB0D00C94EA2 /* EditNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70029E1A4AEB0D00C94EA2 /* EditNumberViewController.m */; };
 		AA7002A51A4AEBA500C94EA2 /* BarcodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */; };
 		AA7002A71A4AF93D00C94EA2 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7002A61A4AF93D00C94EA2 /* App.storyboard */; };
-		AA7002AA1A4B10AB00C94EA2 /* BarcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002A91A4B10AB00C94EA2 /* BarcodeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +52,6 @@
 		AA7002A31A4AEBA500C94EA2 /* BarcodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeGenerator.h; sourceTree = "<group>"; };
 		AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeGenerator.m; sourceTree = "<group>"; };
 		AA7002A61A4AF93D00C94EA2 /* App.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
-		AA7002A81A4B10AB00C94EA2 /* BarcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeView.h; sourceTree = "<group>"; };
-		AA7002A91A4B10AB00C94EA2 /* BarcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				AA7002A61A4AF93D00C94EA2 /* App.storyboard */,
-				AA7002A81A4B10AB00C94EA2 /* BarcodeView.h */,
-				AA7002A91A4B10AB00C94EA2 /* BarcodeView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -280,7 +275,6 @@
 				AA7002791A4AE3F000C94EA2 /* HomeViewController.m in Sources */,
 				AA70029F1A4AEB0D00C94EA2 /* EditNumberViewController.m in Sources */,
 				AA70029C1A4AEAE400C94EA2 /* EditNameViewController.m in Sources */,
-				AA7002AA1A4B10AB00C94EA2 /* BarcodeView.m in Sources */,
 				AA7002761A4AE3F000C94EA2 /* AppDelegate.m in Sources */,
 				AA7002731A4AE3F000C94EA2 /* main.m in Sources */,
 				AA7002A51A4AEBA500C94EA2 /* BarcodeGenerator.m in Sources */,
@@ -471,6 +465,7 @@
 				AA7002921A4AE3F000C94EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA7002931A4AE3F000C94EA2 /* Build configuration list for PBXNativeTarget "Clock InTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +474,7 @@
 				AA7002951A4AE3F000C94EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

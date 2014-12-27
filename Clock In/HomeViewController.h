@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UIAlertViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIImageView *barCodeView;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
 @end
 

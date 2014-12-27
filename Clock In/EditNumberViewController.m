@@ -8,6 +8,13 @@
 
 #import "EditNumberViewController.h"
 
+@interface EditNumberViewController()
+
+@property (weak, nonatomic) IBOutlet UITableViewCell *editNumberCell;
+
+
+@end
+
 @implementation EditNumberViewController
 
 @end
