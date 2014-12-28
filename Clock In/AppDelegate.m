@@ -14,11 +14,13 @@
 
 @implementation AppDelegate
 
++ (void)initialize {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *initialSettings = @{@"employeeName":@"Name", @"employeeNumber": @"123456", @"firstLaunch":@YES};
+    [defaults registerDefaults:initialSettings];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    [[NSUserDefaults standardUserDefaults]registerDefaults:@{@"employeeName":@"Name", @"employeeNumber": @"123456", @"firstLaunch":@YES}];
-    [[NSUserDefaults standardUserDefaults]synchronize];
     
     return YES;
 }

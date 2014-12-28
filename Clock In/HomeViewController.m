@@ -29,7 +29,7 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [[NSUserDefaults standardUserDefaults]synchronize];
-    self.employeeNameString = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeName"];
+    self.employeeNameString = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeName".uppercaseString];
     self.employeeNumberString = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeNumber"];
     BarcodeGenerator *barcodeGen = [[BarcodeGenerator alloc]init];
     

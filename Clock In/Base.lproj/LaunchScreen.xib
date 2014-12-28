@@ -17,7 +17,7 @@
                     <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock-In-Logo-Launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="XfG-hy-t97">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClockIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XfG-hy-t97">
                     <rect key="frame" x="120" y="32" width="240" height="240"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="Z6n-14-59h"/>
@@ -112,6 +112,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Clock-In-Logo-Launch.png" width="480" height="480"/>
+        <image name="ClockIcon" width="240" height="240"/>
     </resources>
 </document>
