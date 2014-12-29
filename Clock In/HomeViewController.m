@@ -13,8 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *barCodeView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) NSString *employeeNameString;
-@property (weak, nonatomic) NSString *employeeNumberString;
+@property (strong, nonatomic) NSString *employeeNameString;
+@property (strong, nonatomic) NSString *employeeNumberString;
 @property (nonatomic) BOOL firstLaunch;
 
 @end
@@ -29,10 +29,12 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [[NSUserDefaults standardUserDefaults]synchronize];
-    self.employeeNameString = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeName".uppercaseString];
+    self.employeeNameString = [[NSString alloc]init];
+    self.employeeNumberString = [[NSString alloc]init];
+    self.employeeNameString = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeName"];
     self.employeeNumberString = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeNumber"];
     BarcodeGenerator *barcodeGen = [[BarcodeGenerator alloc]init];
-    
+    self.nameLabel.text = self.employeeNameString.uppercaseString;
     [self.barCodeView setImage:[barcodeGen drawBarcodeAsImage:self.employeeNumberString]];
 }
 

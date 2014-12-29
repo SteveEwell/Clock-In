@@ -30,13 +30,27 @@
 
 @interface BarcodeGenerator()
 
+-(BOOL)isValidUPC:(NSString *)input;
 -(NSString *)convertEmpNumToUPC:(NSString *)input;
 -(NSString *)convertEmpNumToBinaryEncoding:(NSString *)input;
+
 
 @end
 
 @implementation BarcodeGenerator
 
+-(BOOL)isValidUPC:(NSString *)input {
+    int sumOfString;
+    for (int i=0; i < input.length; i++) {
+        int digit = [[input substringWithRange:NSMakeRange(i, 1)] intValue];
+        sumOfString += digit;
+    }
+    if (sumOfString == 0) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
 
 -(NSString *)convertEmpNumToUPC:(NSString *)input {
     
@@ -47,6 +61,12 @@
     int evenSum = 0;
     int oddSum = 0;
     int checkDigit = 0;
+    
+    // Prevents crashing if all zero value is entered.
+    // All zero value causes array to exceed bounds.
+    if ([self isValidUPC:input] == NO) {
+        return nil;
+    }
     
     for (int i = 0; i<12; i++) {
         if (i < 12 - input.length) {
@@ -60,7 +80,7 @@
     for (int i = 0; i<12; i++) {
         [output appendString:[empUPC objectAtIndexedSubscript:i]];
     }
-    
+        
     for (int i = 0; i < 12; i++) {
         int digit = [[output substringWithRange:NSMakeRange(i, 1)] intValue];
         if (i % 2 == (output.length == 12 ? 0 : 1)) {
@@ -71,7 +91,7 @@
     }
     checkDigit = (10 - (evenSum + (oddSum * 3)) % 10);
     [output appendString:[NSString stringWithFormat:@"%i",checkDigit]];
-    
+        
     return output;
 }
 
@@ -127,6 +147,10 @@
 }
 
 -(UIImage *)drawBarcodeAsImage:(NSString *)input {
+    
+    if ([self isValidUPC:input] == NO) {
+        return nil;
+    }
     
     NSString *upc;
     NSString *binary;

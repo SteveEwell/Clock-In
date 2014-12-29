@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditNumberViewController : UITableViewController
+@interface EditNumberViewController : UITableViewController <UIAlertViewDelegate>
 
 @end

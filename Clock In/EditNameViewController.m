@@ -19,12 +19,14 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    self.employeeName = [[NSString alloc]init];
     self.editTextField.text = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeName"];
     [self.editTextField becomeFirstResponder];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    self.employeeName = self.editTextField.text;
     if (self.employeeName.length > 26 || self.employeeName.length == 0) {
         [[NSUserDefaults standardUserDefaults]synchronize];
     } else {
