@@ -40,7 +40,7 @@
 @implementation BarcodeGenerator
 
 -(BOOL)isValidUPC:(NSString *)input {
-    int sumOfString;
+    int sumOfString = 0;
     for (int i=0; i < input.length; i++) {
         int digit = [[input substringWithRange:NSMakeRange(i, 1)] intValue];
         sumOfString += digit;
@@ -55,9 +55,9 @@
 -(NSString *)convertEmpNumToUPC:(NSString *)input {
     
     NSMutableString *output = [NSMutableString stringWithCapacity:13];
-    NSMutableArray *empUPC = [NSMutableArray array];
+    NSMutableArray *empUPC = [[NSMutableArray alloc]init];
     NSString *zero = @"0";
-    NSString *subString;
+    NSString *subString = [[NSString alloc]init];
     int evenSum = 0;
     int oddSum = 0;
     int checkDigit = 0;
