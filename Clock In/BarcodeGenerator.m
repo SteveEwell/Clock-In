@@ -69,12 +69,11 @@
     }
     
     for (int i = 0; i<12; i++) {
-        if (i < 12 - input.length) {
             [empUPC insertObject:zero atIndex:i];
-        } else {
-            subString = [input substringWithRange:NSMakeRange(i - input.length, 1)];
-            [empUPC insertObject:subString atIndex:i];
-        }
+    }
+    for (int i = 0; i < input.length; i++) {
+        subString = [input substringWithRange:NSMakeRange(i, 1)];
+        [empUPC insertObject:subString atIndex:i + (12 - input.length)];
     }
     
     for (int i = 0; i<12; i++) {
@@ -90,6 +89,11 @@
         }
     }
     checkDigit = (10 - (evenSum + (oddSum * 3)) % 10);
+    
+    if (checkDigit >=10) {
+        checkDigit = 0;
+    }
+    
     [output appendString:[NSString stringWithFormat:@"%i",checkDigit]];
         
     return output;
