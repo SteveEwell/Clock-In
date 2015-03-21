@@ -11,6 +11,7 @@
 @interface SettingsViewController()
 @property (weak, nonatomic) IBOutlet UILabel *nameCellLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberCellLabel;
+@property (strong, nonatomic) NSUserDefaults *defaults;
 
 @end
 
@@ -23,9 +24,10 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [[NSUserDefaults standardUserDefaults]synchronize];
-    self.nameCellLabel.text = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeName"];
-    self.numberCellLabel.text = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeNumber"];
+    self.defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
+    [self.defaults synchronize];
+    self.nameCellLabel.text = [self.defaults stringForKey:@"employeeName"];
+    self.numberCellLabel.text = [self.defaults stringForKey:@"employeeNumber"];
 }
 
 -(IBAction)unwindToSettings:(UIStoryboardSegue *)segue {

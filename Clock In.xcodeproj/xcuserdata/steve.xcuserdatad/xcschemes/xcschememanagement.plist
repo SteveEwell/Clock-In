@@ -4,10 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Clock In.xcscheme</key>
+		<key>Clock In Widget.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Clock In.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Clock InTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +30,16 @@
 			<true/>
 		</dict>
 		<key>AA7002851A4AE3F000C94EA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA974D841ABDA56B00BF2A8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA974D9D1ABDC70900BF2A8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) NSString *employeeNameString;
 @property (strong, nonatomic) NSString *employeeNumberString;
+@property (strong, nonatomic) NSUserDefaults *defaults;
 @property (nonatomic) BOOL firstLaunch;
 
 @end
@@ -28,11 +29,12 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [[NSUserDefaults standardUserDefaults]synchronize];
+    self.defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
+    [self.defaults synchronize];
     self.employeeNameString = [[NSString alloc]init];
     self.employeeNumberString = [[NSString alloc]init];
-    self.employeeNameString = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeName"];
-    self.employeeNumberString = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeNumber"];
+    self.employeeNameString = [self.defaults stringForKey:@"employeeName"];
+    self.employeeNumberString = [self.defaults stringForKey:@"employeeNumber"];
     BarcodeGenerator *barcodeGen = [[BarcodeGenerator alloc]init];
     self.nameLabel.text = self.employeeNameString.uppercaseString;
     [self.barCodeView setImage:[barcodeGen drawBarcodeAsImage:self.employeeNumberString]];
@@ -40,7 +42,7 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    self.firstLaunch = [[NSUserDefaults standardUserDefaults]boolForKey:@"firstLaunch"];
+    self.firstLaunch = [self.defaults boolForKey:@"firstLaunch"];
     if (self.firstLaunch == YES) {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Disclamer!" message:@"This app is not a replacement for your namebadge. It is intended for your convenience only." delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
         [alert addButtonWithTitle:@"Ok"];
@@ -50,8 +52,8 @@
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
-        [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"firstLaunch"];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [self.defaults setBool:NO forKey:@"firstLaunch"];
+        [self.defaults synchronize];
     }
 }
 

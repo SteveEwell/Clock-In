@@ -15,9 +15,10 @@
 @implementation AppDelegate
 
 + (void)initialize {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
     NSDictionary *initialSettings = @{@"employeeName":@"Name", @"employeeNumber": @"123456", @"firstLaunch":@YES};
     [defaults registerDefaults:initialSettings];
+    [defaults synchronize];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

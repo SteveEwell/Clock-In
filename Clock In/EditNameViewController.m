@@ -12,15 +12,21 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *editTextField;
 @property (strong, nonatomic) NSString *employeeName;
+@property (strong, nonatomic) NSUserDefaults *defaults;
 @end
 
 @implementation EditNameViewController
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
+}
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
     self.employeeName = [[NSString alloc]init];
-    self.editTextField.text = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeName"];
+    self.editTextField.text = [self.defaults stringForKey:@"employeeName"];
     [self.editTextField becomeFirstResponder];
 }
 
@@ -28,10 +34,10 @@
     [super viewWillDisappear:animated];
     self.employeeName = self.editTextField.text;
     if (self.employeeName.length > 26 || self.employeeName.length == 0) {
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [self.defaults synchronize];
     } else {
-        [[NSUserDefaults standardUserDefaults]setValue:self.employeeName forKey:@"employeeName"];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [self.defaults setValue:self.employeeName forKey:@"employeeName"];
+        [self.defaults synchronize];
     }
 }
 
@@ -41,8 +47,8 @@
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Name is too long or too short!" message:@"Entered names must be between 1 and 26 characters long." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [alert show];
     } else {
-        [[NSUserDefaults standardUserDefaults]setValue:self.employeeName forKey:@"employeeName"];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [self.defaults setValue:self.employeeName forKey:@"employeeName"];
+        [self.defaults synchronize];
         [self performSegueWithIdentifier:@"toSettings" sender: self];
     }
     [textField resignFirstResponder];
@@ -51,8 +57,8 @@
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
-        [[NSUserDefaults standardUserDefaults]setValue:@"Name" forKey:@"employeeName"];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [self.defaults setValue:@"Name" forKey:@"employeeName"];
+        [self.defaults synchronize];
         [self.editTextField becomeFirstResponder];
     }
 }

@@ -22,7 +22,8 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    self.editTextField.text = [[NSUserDefaults standardUserDefaults]stringForKey:@"employeeNumber"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
+    self.editTextField.text = [defaults stringForKey:@"employeeNumber"];
     self.keyboardToolbar = [[UIToolbar alloc]init];
     [self.keyboardToolbar sizeToFit];
     [self.editTextField becomeFirstResponder];
@@ -35,23 +36,25 @@
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
     self.employeeNumber = self.editTextField.text;
     if (self.employeeNumber.length > 12 || self.employeeNumber.length == 0) {
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [defaults synchronize];
     } else {
-        [[NSUserDefaults standardUserDefaults]setValue:self.employeeNumber forKey:@"employeeNumber"];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [defaults setValue:self.employeeNumber forKey:@"employeeNumber"];
+        [defaults synchronize];
     }
 }
 
 -(IBAction)doneClicked:(NSObject *)sender {
+    NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
     self.employeeNumber = self.editTextField.text;
     if (self.employeeNumber.length > 12 || self.employeeNumber.length == 0) {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Number out of range!" message:@"Enter a number between 1 and 999999." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [alert show];
     } else {
-        [[NSUserDefaults standardUserDefaults]setValue:self.employeeNumber forKey:@"employeeNumber"];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [defaults setValue:self.employeeNumber forKey:@"employeeNumber"];
+        [defaults synchronize];
         [self performSegueWithIdentifier:@"toSettings" sender: self];
     }
     [self.view endEditing:YES];
@@ -59,8 +62,9 @@
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
-        [[NSUserDefaults standardUserDefaults]setValue:@"123456" forKey:@"employeeNumber"];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
+        [defaults setValue:@"123456" forKey:@"employeeNumber"];
+        [defaults synchronize];
         [self.editTextField becomeFirstResponder];
     }
 }
