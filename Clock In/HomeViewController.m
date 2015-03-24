@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Steve Ewell. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "HomeViewController.h"
 #import "BarcodeGenerator.h"
 
@@ -37,6 +38,9 @@
     BarcodeGenerator *barcodeGen = [[BarcodeGenerator alloc]init];
     self.nameLabel.text = self.employeeNameString.uppercaseString;
     [self.barCodeView setImage:[barcodeGen drawBarcodeAsImage:self.employeeNumberString]];
+    CALayer *imageLayer = [self.barCodeView layer];
+    [imageLayer setMasksToBounds:YES];
+    [imageLayer setCornerRadius:5];
 }
 
 -(void)viewDidAppear:(BOOL)animated {

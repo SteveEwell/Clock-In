@@ -165,53 +165,26 @@
     if (binary.length <= 0) {
         return nil;
     }
-    
-    CGSize size = CGSizeMake(415, 230);
+    // 415 230
+    CGSize size = CGSizeMake(332, 140);
     UIGraphicsBeginImageContextWithOptions(size, YES, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetShouldAntialias(context, false);
     
     [[UIColor whiteColor] setFill];
-    [[UIColor grayColor] setStroke];
     
     CGContextFillRect(context, CGRectMake(0, 0, size.width, size.height));
     
-    // Draw box arround barcode
-    CGContextSetLineWidth(context, 5);
-    // Top line
-    CGContextMoveToPoint(context, 0, 0);
-    CGContextAddLineToPoint(context, (size.width / 2) - (size.width / 6), 0);
-    CGContextMoveToPoint(context, (size.width / 2) + (size.width / 6), 0);
-    CGContextAddLineToPoint(context, size.width, 0);
-    // Right side line
-    CGContextMoveToPoint(context, size.width, 0);
-    CGContextAddLineToPoint(context, size.width, (size.height / 2) - (size.height / 6));
-    CGContextMoveToPoint(context, size.width, (size.height / 2) + (size.height / 6));
-    CGContextAddLineToPoint(context, size.width, size.height);
-    // Bottom line
-    CGContextMoveToPoint(context, size.width, size.height);
-    CGContextAddLineToPoint(context, (size.width / 2) + (size.width / 6), size.height);
-    CGContextMoveToPoint(context, (size.width / 2) - (size.width / 6), size.height);
-    CGContextAddLineToPoint(context, 0, size.height);
-    // Left side line
-    CGContextMoveToPoint(context, 0, size.height);
-    CGContextAddLineToPoint(context, 0, (size.height / 2) + (size.height / 6));
-    CGContextMoveToPoint(context, 0, (size.height / 2) - (size.height / 6));
-    CGContextAddLineToPoint(context, 0, 0);
-    
-    CGContextDrawPath(context, kCGPathFillStroke);
-    
-    // Reset line width for barcode
-    CGContextSetLineWidth(context, 4);
+    CGContextSetLineWidth(context, 3);
     [[UIColor blackColor] setStroke];
     
-    int padding = 5;
+    int padding = 8;
     for (int i = 0; i < binary.length; i++) {
         NSString *character = [binary substringWithRange:NSMakeRange(i, 1)];
         if ([character isEqualToString:@"1"]) {
-            CGContextMoveToPoint(context, padding * 4, 10 * 2);
-            CGContextAddLineToPoint(context, padding * 4, size.height - (10 * 2));
+            CGContextMoveToPoint(context, (padding * 3) + 2, 6 * 2);
+            CGContextAddLineToPoint(context, (padding * 3) + 2, size.height - (6 * 2));
             
         }
         padding++;
