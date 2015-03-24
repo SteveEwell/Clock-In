@@ -24,12 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
     [self.defaults synchronize];
     self.employeeNameString = [[NSString alloc]init];
     self.employeeNumberString = [[NSString alloc]init];

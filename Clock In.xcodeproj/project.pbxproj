@@ -22,6 +22,7 @@
 		AA974DA51ABDC70900BF2A8E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA974DA41ABDC70900BF2A8E /* TodayViewController.m */; };
 		AA974DA71ABDC70900BF2A8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA974DA61ABDC70900BF2A8E /* MainInterface.storyboard */; };
 		AA974DAA1ABDC70900BF2A8E /* Clock In Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA974D9E1ABDC70900BF2A8E /* Clock In Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AAF7CC971ABF1DBD00C5252A /* WidgetBarcodeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7CC961ABF1DBD00C5252A /* WidgetBarcodeRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,9 @@
 		AA974DA31ABDC70900BF2A8E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		AA974DA41ABDC70900BF2A8E /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		AA974DA61ABDC70900BF2A8E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		AAF7CC941ABF12AC00C5252A /* Clock In Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Clock In Widget.entitlements"; sourceTree = "<group>"; };
+		AAF7CC951ABF1DBD00C5252A /* WidgetBarcodeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetBarcodeRenderer.h; sourceTree = "<group>"; };
+		AAF7CC961ABF1DBD00C5252A /* WidgetBarcodeRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetBarcodeRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +230,11 @@
 		AA974DA01ABDC70900BF2A8E /* Clock In Widget */ = {
 			isa = PBXGroup;
 			children = (
+				AAF7CC941ABF12AC00C5252A /* Clock In Widget.entitlements */,
 				AA974DA31ABDC70900BF2A8E /* TodayViewController.h */,
 				AA974DA41ABDC70900BF2A8E /* TodayViewController.m */,
+				AAF7CC951ABF1DBD00C5252A /* WidgetBarcodeRenderer.h */,
+				AAF7CC961ABF1DBD00C5252A /* WidgetBarcodeRenderer.m */,
 				AA974DA61ABDC70900BF2A8E /* MainInterface.storyboard */,
 				AA974DA11ABDC70900BF2A8E /* Supporting Files */,
 			);
@@ -324,6 +331,11 @@
 					AA974D9D1ABDC70900BF2A8E = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = ES947SD9KT;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -403,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA974DA51ABDC70900BF2A8E /* TodayViewController.m in Sources */,
+				AAF7CC971ABF1DBD00C5252A /* WidgetBarcodeRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +591,7 @@
 		AA974DAC1ABDC70A00BF2A8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Clock In Widget/Clock In Widget.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -588,6 +602,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -595,6 +610,7 @@
 		AA974DAD1ABDC70A00BF2A8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Clock In Widget/Clock In Widget.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -602,6 +618,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -643,6 +660,7 @@
 				AA974DAD1ABDC70A00BF2A8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

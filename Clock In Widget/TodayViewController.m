@@ -6,23 +6,28 @@
 //  Copyright (c) 2015 Steve Ewell. All rights reserved.
 //
 
-#import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import <QuartzCore/QuartzCore.h>
+#import "TodayViewController.h"
+#import "WidgetBarcodeRenderer.h"
 
 
 @interface TodayViewController () <NCWidgetProviding>
 
-@property (strong, nonatomic) NSString *employeeNameString;
-@property (strong, nonatomic) NSString *employeeNumberString;
+@property (weak, nonatomic) IBOutlet UIImageView *barcode;
+
 @end
 
 @implementation TodayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    WidgetBarcodeRenderer *barcodeGen = [[WidgetBarcodeRenderer alloc]init];
     NSUserDefaults *defaults = [[NSUserDefaults alloc]initWithSuiteName:@"group.ewell.TodayExtensionSharingDefaults"];
-    self.employeeNameString = [defaults stringForKey:@"employeeName"];
-    self.employeeNumberString = [defaults stringForKey:@"employeeNumber"];
+    [self.barcode setImage:[barcodeGen drawBarcodeAsImage:[defaults stringForKey:@"employeeNumber"]]];
+    CALayer *imageLayer = [self.barcode layer];
+    [imageLayer setMasksToBounds:YES];
+    [imageLayer setCornerRadius:5];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,6 +43,10 @@
     // If there's an update, use NCUpdateResultNewData
     
     completionHandler(NCUpdateResultNewData);
+}
+
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets {
+    return UIEdgeInsetsZero;
 }
 
 @end
