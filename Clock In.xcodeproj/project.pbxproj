@@ -22,6 +22,8 @@
 		AA974DA51ABDC70900BF2A8E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA974DA41ABDC70900BF2A8E /* TodayViewController.m */; };
 		AA974DA71ABDC70900BF2A8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA974DA61ABDC70900BF2A8E /* MainInterface.storyboard */; };
 		AA974DAA1ABDC70900BF2A8E /* Clock In Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA974D9E1ABDC70900BF2A8E /* Clock In Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AAE49D241AC1DAB900C84819 /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE49D231AC1DAB900C84819 /* HomeNavigationController.m */; };
+		AAE49D271AC1DF5A00C84819 /* SettingsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE49D261AC1DF5A00C84819 /* SettingsNavigationController.m */; };
 		AAF7CC971ABF1DBD00C5252A /* WidgetBarcodeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7CC961ABF1DBD00C5252A /* WidgetBarcodeRenderer.m */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,10 @@
 		AA974DA31ABDC70900BF2A8E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		AA974DA41ABDC70900BF2A8E /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		AA974DA61ABDC70900BF2A8E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		AAE49D221AC1DAB900C84819 /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
+		AAE49D231AC1DAB900C84819 /* HomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavigationController.m; sourceTree = "<group>"; };
+		AAE49D251AC1DF5A00C84819 /* SettingsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationController.h; sourceTree = "<group>"; };
+		AAE49D261AC1DF5A00C84819 /* SettingsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationController.m; sourceTree = "<group>"; };
 		AAF7CC941ABF12AC00C5252A /* Clock In Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Clock In Widget.entitlements"; sourceTree = "<group>"; };
 		AAF7CC951ABF1DBD00C5252A /* WidgetBarcodeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetBarcodeRenderer.h; sourceTree = "<group>"; };
 		AAF7CC961ABF1DBD00C5252A /* WidgetBarcodeRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetBarcodeRenderer.m; sourceTree = "<group>"; };
@@ -189,6 +195,10 @@
 				AA70029B1A4AEAE400C94EA2 /* EditNameViewController.m */,
 				AA70029D1A4AEB0D00C94EA2 /* EditNumberViewController.h */,
 				AA70029E1A4AEB0D00C94EA2 /* EditNumberViewController.m */,
+				AAE49D221AC1DAB900C84819 /* HomeNavigationController.h */,
+				AAE49D231AC1DAB900C84819 /* HomeNavigationController.m */,
+				AAE49D251AC1DF5A00C84819 /* SettingsNavigationController.h */,
+				AAE49D261AC1DF5A00C84819 /* SettingsNavigationController.m */,
 			);
 			name = Controlers;
 			sourceTree = "<group>";
@@ -394,9 +404,11 @@
 			files = (
 				AA7002791A4AE3F000C94EA2 /* HomeViewController.m in Sources */,
 				AA70029F1A4AEB0D00C94EA2 /* EditNumberViewController.m in Sources */,
+				AAE49D241AC1DAB900C84819 /* HomeNavigationController.m in Sources */,
 				AA70029C1A4AEAE400C94EA2 /* EditNameViewController.m in Sources */,
 				AA7002761A4AE3F000C94EA2 /* AppDelegate.m in Sources */,
 				AA7002731A4AE3F000C94EA2 /* main.m in Sources */,
+				AAE49D271AC1DF5A00C84819 /* SettingsNavigationController.m in Sources */,
 				AA7002A51A4AEBA500C94EA2 /* BarcodeGenerator.m in Sources */,
 				AA7002991A4AEA6300C94EA2 /* SettingsViewController.m in Sources */,
 			);

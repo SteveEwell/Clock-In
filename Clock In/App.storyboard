@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cWP-eS-ZrA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ilA-mZ-JPI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -7,30 +7,47 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Settings Navigation Controller-->
         <scene sceneID="jJw-4h-9Wn">
             <objects>
-                <navigationController id="cWP-eS-ZrA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="j9t-Zj-Tec">
+                <navigationController id="cWP-eS-ZrA" customClass="SettingsNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" barStyle="black" id="j9t-Zj-Tec">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.10606991517651128" green="0.22710669377848625" blue="0.32082919973544977" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.1060699152" green="0.22710669380000001" blue="0.32082919970000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="fWY-oy-pkv" kind="relationship" relationship="rootViewController" id="dGJ-sp-VeS"/>
+                        <segue destination="9o8-hs-au1" kind="relationship" relationship="rootViewController" id="FMW-KO-JUL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mua-Q3-Qyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190.5" y="370.5"/>
+            <point key="canvasLocation" x="631.5" y="370.5"/>
+        </scene>
+        <!--Home Navigation Controller-->
+        <scene sceneID="KuG-Jh-jyJ">
+            <objects>
+                <navigationController id="ilA-mZ-JPI" customClass="HomeNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="j5l-iu-1uy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fWY-oy-pkv" kind="relationship" relationship="rootViewController" id="Xt1-57-k59"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5o-fO-IgZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1287" y="377.25"/>
         </scene>
         <!--Clock In-->
         <scene sceneID="YJz-GC-xzN">
             <objects>
-                <viewController title="Clock In" id="fWY-oy-pkv" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController title="Clock In" automaticallyAdjustsScrollViewInsets="NO" id="fWY-oy-pkv" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VMI-ad-5vE"/>
                         <viewControllerLayoutGuide type="bottom" id="E0f-a5-Zw6"/>
@@ -81,7 +98,9 @@
                         <constraints>
                             <constraint firstItem="P89-zW-Sci" firstAttribute="centerX" secondItem="qft-tT-Qth" secondAttribute="centerX" id="1oK-Vw-19I"/>
                             <constraint firstItem="P89-zW-Sci" firstAttribute="bottom" secondItem="E0f-a5-Zw6" secondAttribute="top" id="4c4-P9-aDK"/>
-                            <constraint firstItem="zhB-P0-yAc" firstAttribute="top" secondItem="VMI-ad-5vE" secondAttribute="bottom" constant="75" id="M70-j1-9Cz"/>
+                            <constraint firstItem="zhB-P0-yAc" firstAttribute="top" secondItem="VMI-ad-5vE" secondAttribute="bottom" constant="75" id="M70-j1-9Cz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="119"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="P89-zW-Sci" secondAttribute="trailing" id="WRS-zp-WmE"/>
                             <constraint firstItem="zhB-P0-yAc" firstAttribute="trailing" secondItem="qft-tT-Qth" secondAttribute="trailing" id="YGs-QY-adR"/>
                             <constraint firstItem="qft-tT-Qth" firstAttribute="leading" secondItem="zhB-P0-yAc" secondAttribute="leading" id="eqW-Q6-K7B"/>
@@ -129,11 +148,11 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Clock In" id="3Ob-dQ-ool">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="YeT-uO-sUE">
+                    <navigationItem key="navigationItem" id="3Ob-dQ-ool">
+                        <barButtonItem key="rightBarButtonItem" image="Image" id="YeT-uO-sUE">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="9o8-hs-au1" kind="show" id="ZdJ-rz-7Fr"/>
+                                <segue destination="cWP-eS-ZrA" kind="presentation" id="B0O-cU-bU1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -143,8 +162,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYQ-e9-0oZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="d3i-ec-70o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="633" y="370.5"/>
+            <point key="canvasLocation" x="-267" y="370.5"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Iux-bc-5uP">
@@ -223,11 +243,14 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="9o8-hs-au1" id="otr-hf-48O"/>
-                            <outlet property="delegate" destination="9o8-hs-au1" id="7HL-kV-ynN"/>
-                        </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="ikk-hw-HG6">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="fAd-Sj-xF8">
+                            <connections>
+                                <segue destination="d3i-ec-70o" kind="unwind" unwindAction="unwindToHome:" id="v0g-fC-D7R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameCellLabel" destination="bYr-Om-E8M" id="hz9-V7-eJa"/>
                         <outlet property="numberCellLabel" destination="XcS-yD-4cx" id="2SM-xD-Exn"/>
@@ -386,6 +409,7 @@
     </scenes>
     <resources>
         <image name="BlurBG2" width="414" height="736"/>
+        <image name="Image" width="26" height="26"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
