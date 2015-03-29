@@ -78,6 +78,28 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode error" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgW-8K-fcM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EaN-1S-vZE"/>
+                                    <constraint firstAttribute="width" constant="109" id="YIE-Rr-v2l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EaN-1S-vZE"/>
+                                        <exclude reference="YIE-Rr-v2l"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="EaN-1S-vZE"/>
+                                        <include reference="YIE-Rr-v2l"/>
+                                    </mask>
+                                </variation>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qft-tT-Qth">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
@@ -104,8 +126,10 @@
                             <constraint firstAttribute="trailing" secondItem="P89-zW-Sci" secondAttribute="trailing" id="WRS-zp-WmE"/>
                             <constraint firstItem="zhB-P0-yAc" firstAttribute="trailing" secondItem="qft-tT-Qth" secondAttribute="trailing" id="YGs-QY-adR"/>
                             <constraint firstItem="qft-tT-Qth" firstAttribute="leading" secondItem="zhB-P0-yAc" secondAttribute="leading" id="eqW-Q6-K7B"/>
+                            <constraint firstAttribute="centerX" secondItem="XgW-8K-fcM" secondAttribute="centerX" id="geU-SJ-KiX"/>
                             <constraint firstItem="P89-zW-Sci" firstAttribute="top" secondItem="wiX-da-wiE" secondAttribute="top" id="nPT-ua-aki"/>
                             <constraint firstItem="P89-zW-Sci" firstAttribute="leading" secondItem="wiX-da-wiE" secondAttribute="leading" id="nb0-un-C6r"/>
+                            <constraint firstItem="E0f-a5-Zw6" firstAttribute="top" secondItem="XgW-8K-fcM" secondAttribute="bottom" constant="125" id="sjq-er-vJ1"/>
                             <constraint firstItem="zhB-P0-yAc" firstAttribute="leading" secondItem="wiX-da-wiE" secondAttribute="leadingMargin" constant="18" id="uXE-R2-yFZ"/>
                             <constraint firstItem="E0f-a5-Zw6" firstAttribute="top" secondItem="qft-tT-Qth" secondAttribute="bottom" constant="65" id="vgd-Ek-1da"/>
                         </constraints>
@@ -113,6 +137,7 @@
                             <mask key="subviews">
                                 <exclude reference="P89-zW-Sci"/>
                                 <exclude reference="zhB-P0-yAc"/>
+                                <exclude reference="XgW-8K-fcM"/>
                                 <exclude reference="qft-tT-Qth"/>
                             </mask>
                             <mask key="constraints">
@@ -125,6 +150,8 @@
                                 <exclude reference="YGs-QY-adR"/>
                                 <exclude reference="uXE-R2-yFZ"/>
                                 <exclude reference="eqW-Q6-K7B"/>
+                                <exclude reference="geU-SJ-KiX"/>
+                                <exclude reference="sjq-er-vJ1"/>
                                 <exclude reference="vgd-Ek-1da"/>
                             </mask>
                         </variation>
@@ -132,6 +159,7 @@
                             <mask key="subviews">
                                 <include reference="P89-zW-Sci"/>
                                 <include reference="zhB-P0-yAc"/>
+                                <include reference="XgW-8K-fcM"/>
                                 <include reference="qft-tT-Qth"/>
                             </mask>
                             <mask key="constraints">
@@ -144,6 +172,8 @@
                                 <include reference="YGs-QY-adR"/>
                                 <include reference="uXE-R2-yFZ"/>
                                 <include reference="eqW-Q6-K7B"/>
+                                <include reference="geU-SJ-KiX"/>
+                                <include reference="sjq-er-vJ1"/>
                                 <include reference="vgd-Ek-1da"/>
                             </mask>
                         </variation>
