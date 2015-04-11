@@ -34,9 +34,7 @@
 -(NSString *)convertEmpNumToUPC:(NSString *)input {
     
     NSMutableString *output = [NSMutableString stringWithCapacity:13];
-    NSMutableArray *empUPC = [[NSMutableArray alloc]init];
     NSString *zero = @"0";
-    NSString *subString = [[NSString alloc]init];
     int evenSum = 0;
     int oddSum = 0;
     int checkDigit = 0;
@@ -47,17 +45,11 @@
         return nil;
     }
     
-    for (int i = 0; i<12; i++) {
-        [empUPC insertObject:zero atIndex:i];
-    }
-    for (int i = 0; i < input.length; i++) {
-        subString = [input substringWithRange:NSMakeRange(i, 1)];
-        [empUPC insertObject:subString atIndex:i + (12 - input.length)];
+    for (int i = 0; i<12 - input.length; i++) {
+        [output appendString:zero];
     }
     
-    for (int i = 0; i<12; i++) {
-        [output appendString:[empUPC objectAtIndexedSubscript:i]];
-    }
+    [output appendString:input];
     
     for (int i = 0; i < 12; i++) {
         int digit = [[output substringWithRange:NSMakeRange(i, 1)] intValue];
