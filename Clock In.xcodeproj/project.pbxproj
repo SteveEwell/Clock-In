@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AA974D981ABDA87100BF2A8E /* Clock In.entitlements */,
-				AA7002A21A4AEB6A00C94EA2 /* Models */,
+				AA7002A21A4AEB6A00C94EA2 /* Barcode */,
 				AA7002A11A4AEB4C00C94EA2 /* Delegates */,
 				AA7002A01A4AEB4300C94EA2 /* Views */,
 				AA7002961A4AE9E100C94EA2 /* Controlers */,
@@ -220,13 +220,13 @@
 			name = Delegates;
 			sourceTree = "<group>";
 		};
-		AA7002A21A4AEB6A00C94EA2 /* Models */ = {
+		AA7002A21A4AEB6A00C94EA2 /* Barcode */ = {
 			isa = PBXGroup;
 			children = (
 				AA7002A31A4AEBA500C94EA2 /* BarcodeGenerator.h */,
 				AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */,
 			);
-			name = Models;
+			name = Barcode;
 			sourceTree = "<group>";
 		};
 		AA974D861ABDA56B00BF2A8E /* Frameworks */ = {
