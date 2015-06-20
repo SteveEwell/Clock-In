@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Clock In WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Clock In Widget.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -21,9 +26,24 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Glance - Clock In WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Notification - Clock In WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AA4F503D1B3604D800E0C6A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AA70026C1A4AE3F000C94EA2</key>
 		<dict>
 			<key>primary</key>
