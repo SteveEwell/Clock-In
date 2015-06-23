@@ -26,6 +26,7 @@
 		AA70029F1A4AEB0D00C94EA2 /* EditNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70029E1A4AEB0D00C94EA2 /* EditNumberViewController.m */; };
 		AA7002A51A4AEBA500C94EA2 /* BarcodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */; };
 		AA7002A71A4AF93D00C94EA2 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7002A61A4AF93D00C94EA2 /* App.storyboard */; };
+		AA7FB4EE1B3965AF001D0E53 /* WatchBarcodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7FB4ED1B3965AF001D0E53 /* WatchBarcodeGenerator.m */; };
 		AA974D9F1ABDC70900BF2A8E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA974D871ABDA56B00BF2A8E /* NotificationCenter.framework */; };
 		AA974DA51ABDC70900BF2A8E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA974DA41ABDC70900BF2A8E /* TodayViewController.m */; };
 		AA974DA71ABDC70900BF2A8E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA974DA61ABDC70900BF2A8E /* MainInterface.storyboard */; };
@@ -117,6 +118,9 @@
 		AA7002A31A4AEBA500C94EA2 /* BarcodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeGenerator.h; sourceTree = "<group>"; };
 		AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeGenerator.m; sourceTree = "<group>"; };
 		AA7002A61A4AF93D00C94EA2 /* App.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
+		AA7FB4EC1B3965AF001D0E53 /* WatchBarcodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchBarcodeGenerator.h; sourceTree = "<group>"; };
+		AA7FB4ED1B3965AF001D0E53 /* WatchBarcodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchBarcodeGenerator.m; sourceTree = "<group>"; };
+		AA7FB4EF1B397FEC001D0E53 /* Clock In WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Clock In WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		AA974D871ABDA56B00BF2A8E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		AA974D981ABDA87100BF2A8E /* Clock In.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Clock In.entitlements"; sourceTree = "<group>"; };
 		AA974D9E1ABDC70900BF2A8E /* Clock In Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Clock In Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +173,9 @@
 		AA4F502D1B3604D800E0C6A0 /* Clock In WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AA7FB4EF1B397FEC001D0E53 /* Clock In WatchKit Extension.entitlements */,
+				AA7FB4EC1B3965AF001D0E53 /* WatchBarcodeGenerator.h */,
+				AA7FB4ED1B3965AF001D0E53 /* WatchBarcodeGenerator.m */,
 				AA4F50311B3604D800E0C6A0 /* InterfaceController.h */,
 				AA4F50321B3604D800E0C6A0 /* InterfaceController.m */,
 				AA4F50341B3604D800E0C6A0 /* NotificationController.h */,
@@ -237,7 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				AA974D981ABDA87100BF2A8E /* Clock In.entitlements */,
-				AA7002A21A4AEB6A00C94EA2 /* Models */,
+				AA7002A21A4AEB6A00C94EA2 /* Barcode */,
 				AA7002A11A4AEB4C00C94EA2 /* Delegates */,
 				AA7002A01A4AEB4300C94EA2 /* Views */,
 				AA7002961A4AE9E100C94EA2 /* Controlers */,
@@ -310,13 +317,13 @@
 			name = Delegates;
 			sourceTree = "<group>";
 		};
-		AA7002A21A4AEB6A00C94EA2 /* Models */ = {
+		AA7002A21A4AEB6A00C94EA2 /* Barcode */ = {
 			isa = PBXGroup;
 			children = (
 				AA7002A31A4AEBA500C94EA2 /* BarcodeGenerator.h */,
 				AA7002A41A4AEBA500C94EA2 /* BarcodeGenerator.m */,
 			);
-			name = Models;
+			name = Barcode;
 			sourceTree = "<group>";
 		};
 		AA974D861ABDA56B00BF2A8E /* Frameworks */ = {
@@ -452,6 +459,14 @@
 					AA4F502B1B3604D800E0C6A0 = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = ES947SD9KT;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 					AA4F503D1B3604D800E0C6A0 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -553,6 +568,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7FB4EE1B3965AF001D0E53 /* WatchBarcodeGenerator.m in Sources */,
 				AA4F50361B3604D800E0C6A0 /* NotificationController.m in Sources */,
 				AA4F50331B3604D800E0C6A0 /* InterfaceController.m in Sources */,
 				AA4F50391B3604D800E0C6A0 /* GlanceController.m in Sources */,
@@ -640,6 +656,7 @@
 		AA4F504D1B3604D800E0C6A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Clock In WatchKit Extension/Clock In WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -652,6 +669,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -659,6 +677,7 @@
 		AA4F504E1B3604D800E0C6A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Clock In WatchKit Extension/Clock In WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -667,6 +686,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -894,6 +914,7 @@
 				AA4F50501B3604D800E0C6A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA4F50521B3604D800E0C6A0 /* Build configuration list for PBXNativeTarget "Clock In WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -902,6 +923,7 @@
 				AA4F504E1B3604D800E0C6A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA7002681A4AE3F000C94EA2 /* Build configuration list for PBXProject "Clock In" */ = {
 			isa = XCConfigurationList;

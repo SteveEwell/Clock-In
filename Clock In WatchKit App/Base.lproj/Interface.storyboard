@@ -10,26 +10,54 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <imageView width="128" height="148" alignment="center" verticalAlignment="center" image="testbarcode" contentMode="scaleAspectFit" id="xPH-OU-ybj"/>
+                        <group width="100" height="100" alignment="center" verticalAlignment="center" radius="7" id="LrB-eI-oIc">
+                            <items>
+                                <imageView width="136" height="145" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="xPH-OU-ybj">
+                                    <variation key="device=watch42mm" height="164" width="156"/>
+                                </imageView>
+                            </items>
+                            <variation key="device=watch42mm" height="160" width="149"/>
+                        </group>
                     </items>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="LrB-eI-oIc"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="watchBarcode" destination="xPH-OU-ybj" id="Ra4-Br-YkF"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="234.51282051282053" y="346.53846153846155"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" topTemplateType="largeBody1" id="0uZ-2p-rRc" customClass="GlanceController">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
-                        <label alignment="left" text="Steve" id="RJr-tg-NSF"/>
-                        <label alignment="left" text="Test" id="wnC-Gv-toe"/>
-                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                        <group alignment="left" layout="vertical" id="ONH-B3-bBc">
                             <items>
-                                <imageView width="136" height="98" alignment="center" image="testbarcode" contentMode="scaleAspectFit" id="b89-6G-68E"/>
+                                <label alignment="center" text="Clock In" id="p7D-dP-S4s"/>
+                                <label alignment="center" verticalAlignment="bottom" text="Steve" textAlignment="center" id="kE8-8T-bsp">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="17" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group alignment="left" layout="vertical" id="jaK-FL-gxl">
+                            <items>
+                                <separator alignment="left" id="TR9-Ri-Suk"/>
+                                <label alignment="center" verticalAlignment="center" text="TOUCH" textAlignment="center" id="tiA-ti-PCt"/>
+                                <label alignment="center" verticalAlignment="center" text="TO" textAlignment="center" id="xhj-d2-fjK"/>
+                                <label alignment="center" verticalAlignment="center" text="CLOCK IN" id="J3U-MQ-PKh"/>
                             </items>
                         </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="employeeNameLabel" destination="kE8-8T-bsp" id="vmO-cB-AQO"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>
