@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D0E1D4BF-6B51-4BD6-BE9A-3B907F28EC32</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Clock In</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>449203E6F1C9D1376D55FB6576E6563BF6F3995C</key>
 		<string>https://github.com/SteveEwell/Clock-In.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Clock In.xcodeproj</string>
+	<string>Clock In.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>449203E6F1C9D1376D55FB6576E6563BF6F3995C</key>
