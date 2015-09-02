@@ -45,7 +45,7 @@
         int digit = [[input substringWithRange:NSMakeRange(i, 1)] intValue];
         sumOfString += digit;
     }
-    if (sumOfString == 0) {
+    if (sumOfString <= 0) {
         return NO;
     } else {
         return YES;
@@ -157,7 +157,6 @@
     if (binary.length <= 0) {
         return nil;
     }
-    // 415 230
     CGSize size = CGSizeMake(332, 140);
     UIGraphicsBeginImageContextWithOptions(size, YES, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
