@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AA4F50331B3604D800E0C6A0 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4F50321B3604D800E0C6A0 /* InterfaceController.m */; };
-		AA4F50361B3604D800E0C6A0 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4F50351B3604D800E0C6A0 /* NotificationController.m */; };
 		AA4F50391B3604D800E0C6A0 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4F50381B3604D800E0C6A0 /* GlanceController.m */; };
 		AA4F503B1B3604D800E0C6A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4F503A1B3604D800E0C6A0 /* Images.xcassets */; };
 		AA4F503F1B3604D800E0C6A0 /* Clock In WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = AA4F503E1B3604D800E0C6A0 /* Clock In WatchKit App.app */; };
@@ -88,8 +87,6 @@
 		AA4F50301B3604D800E0C6A0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		AA4F50311B3604D800E0C6A0 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
 		AA4F50321B3604D800E0C6A0 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		AA4F50341B3604D800E0C6A0 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
-		AA4F50351B3604D800E0C6A0 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		AA4F50371B3604D800E0C6A0 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
 		AA4F50381B3604D800E0C6A0 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
 		AA4F503A1B3604D800E0C6A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -178,8 +175,6 @@
 				AA7FB4ED1B3965AF001D0E53 /* WatchBarcodeGenerator.m */,
 				AA4F50311B3604D800E0C6A0 /* InterfaceController.h */,
 				AA4F50321B3604D800E0C6A0 /* InterfaceController.m */,
-				AA4F50341B3604D800E0C6A0 /* NotificationController.h */,
-				AA4F50351B3604D800E0C6A0 /* NotificationController.m */,
 				AA4F50371B3604D800E0C6A0 /* GlanceController.h */,
 				AA4F50381B3604D800E0C6A0 /* GlanceController.m */,
 				AA4F503A1B3604D800E0C6A0 /* Images.xcassets */,
@@ -569,7 +564,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7FB4EE1B3965AF001D0E53 /* WatchBarcodeGenerator.m in Sources */,
-				AA4F50361B3604D800E0C6A0 /* NotificationController.m in Sources */,
 				AA4F50331B3604D800E0C6A0 /* InterfaceController.m in Sources */,
 				AA4F50391B3604D800E0C6A0 /* GlanceController.m in Sources */,
 			);
